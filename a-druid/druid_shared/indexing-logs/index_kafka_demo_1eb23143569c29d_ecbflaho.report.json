@@ -1,0 +1,1 @@
+{"ingestionStatsAndErrors":{"taskId":"index_kafka_demo_1eb23143569c29d_ecbflaho","payload":{"ingestionState":"COMPLETED","unparseableEvents":{},"rowStats":{"buildSegments":{"processed":26,"processedWithError":0,"thrownAway":0,"unparseable":0}},"errorMsg":null,"segmentAvailabilityConfirmed":true},"type":"ingestionStatsAndErrors"}}
