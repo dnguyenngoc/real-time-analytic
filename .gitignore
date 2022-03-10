@@ -2,3 +2,9 @@ __pycache__
 logs/**
 pgadmin
 a-db
+broker_var
+coordinator_var
+druid_shared
+historical_var
+middle_var
+router_var
