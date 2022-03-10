@@ -45,11 +45,13 @@ In today's world you want to learn from your customers as quickly as possible. T
 ### 3. Start Server
 `cd real-time-analytic && docker-compose up`
 
-Service	URL
-Druid Unified Console	http://localhost:8888/
-Druid Legacy Console	http://localhost:8081/
-Superset	http://localhost:8088/
-Airflow http://localhost:3000/
+
+| Service               | URL                              |
+| :-------------------: | :------------------------------: |
+| Druid Unified Console | http://localhost:8888/           |
+| Druid Legacy Console  | http://localhost:8081/           |
+| Superset              | http://localhost:8088/           |
+| Airflow               | http://localhost:3000/           |
 
 
 ## Contact Us
