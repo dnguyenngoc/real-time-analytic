@@ -6,11 +6,7 @@
 [![Posgresql](https://img.shields.io/badge/postgres-14.1-brown)](https://www.postgresql.org/)
 [![Superset](https://img.shields.io/badge/Superset-0.63-lightgrey)](https://superset.apache.org/docs/intro/)
 
-In today's world you want to learn from your customers as quickly as possible. This blog gives an introduction to setting up streaming analytics using open source technologies. We'll use Apache {Kafka, Superset, Druid, Airflow} to set up a system that allows you to get a deeper understanding of the behaviour of your customers. Having your analytics in a streaming fashion enable you to continuously analyze your customer's behaviour and act on it. For example:
-
- - When we perform a new experiment using A/B testing, we want to monitor the experiment and have the possibility to terminate either experiment A or B early, if the results show that one significantly outperforms the other.
- - All the actions of users on your online website tell something about their intent. When we have the ability to process the data immediately, we can tailor the content to each user.
- - Gather general information about the usage of the application to align your next iterations of the application. :fire: :fire: :fire: :fire:
+In today's world you want to learn from your customers as quickly as possible. This blog gives an introduction to setting up streaming analytics using open source technologies. We'll use Apache {Kafka, Superset, Druid, Airflow} to set up a system that allows you to get a deeper understanding of the behaviour of your customers.
 
 ## Screenshots & Gifs
 
