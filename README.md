@@ -23,9 +23,9 @@ In today's world you want to learn from your customers as quickly as possible. T
 ## Contents
 - [Screenshots & Gifs](#screenshots--gifs)
 - [Example](#example)
-    - [1. Install docker, docker-compose](https://github.com/apot-group/document-processing/tree/main/dp-api/README.md#1-login-accept-token)
-    - [2. Pull git repo](https://github.com/apot-group/document-processing/tree/main/dp-api/README.md#2-login-refresh-token)
-    - [3. Start Server](https://github.com/apot-group/document-processing/tree/main/dp-api/README.md#3-ml-predict)
+    - [1. Install docker, docker-compose](https://github.com/apot-group/real-time-analytic#1-install-docker-and-docker-compose)
+    - [2. Pull git repo](https://github.com/apot-group/real-time-analytic#2-pull-git-repo)
+    - [3. Start Server](https://github.com/apot-group/real-time-analytic#3-start-server)
 - [Contact Us](#contact-us)
 
 
