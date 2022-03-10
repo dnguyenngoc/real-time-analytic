@@ -1,0 +1,1010 @@
+2022-03-10T03:37:53,863 INFO [main] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.5.Final
+2022-03-10T03:37:54,404 INFO [main] org.apache.druid.initialization.Initialization - Loading extension [druid-histogram], jars: druid-histogram-0.22.1.jar
+2022-03-10T03:37:54,406 INFO [main] org.apache.druid.initialization.Initialization - Loading extension [druid-datasketches], jars: druid-datasketches-0.22.1.jar, commons-math3-3.6.1.jar
+2022-03-10T03:37:54,407 INFO [main] org.apache.druid.initialization.Initialization - Loading extension [druid-lookups-cached-global], jars: druid-lookups-cached-global-0.22.1.jar, mapdb-1.0.8.jar
+2022-03-10T03:37:54,409 INFO [main] org.apache.druid.initialization.Initialization - Loading extension [postgresql-metadata-storage], jars: postgresql-metadata-storage-0.22.1.jar, postgresql-42.2.14.jar
+2022-03-10T03:37:54,410 INFO [main] org.apache.druid.initialization.Initialization - Loading extension [druid-kafka-indexing-service], jars: snappy-java-1.1.8.1.jar, zstd-jni-1.3.3-1.jar, kafka-clients-2.8.0.jar, lz4-java-1.7.1.jar, druid-kafka-indexing-service-0.22.1.jar
+2022-03-10T03:37:54,610 INFO [main] org.apache.druid.initialization.Initialization - Loading extension [druid-histogram], jars: druid-histogram-0.22.1.jar
+2022-03-10T03:37:54,614 INFO [main] org.apache.druid.initialization.Initialization - Loading extension [druid-datasketches], jars: druid-datasketches-0.22.1.jar, commons-math3-3.6.1.jar
+2022-03-10T03:37:54,624 INFO [main] org.apache.druid.initialization.Initialization - Loading extension [druid-lookups-cached-global], jars: druid-lookups-cached-global-0.22.1.jar, mapdb-1.0.8.jar
+2022-03-10T03:37:54,626 INFO [main] org.apache.druid.initialization.Initialization - Loading extension [postgresql-metadata-storage], jars: postgresql-metadata-storage-0.22.1.jar, postgresql-42.2.14.jar
+2022-03-10T03:37:54,628 INFO [main] org.apache.druid.initialization.Initialization - Loading extension [druid-kafka-indexing-service], jars: snappy-java-1.1.8.1.jar, zstd-jni-1.3.3-1.jar, kafka-clients-2.8.0.jar, lz4-java-1.7.1.jar, druid-kafka-indexing-service-0.22.1.jar
+2022-03-10T03:37:56,180 INFO [main] org.apache.druid.server.emitter.EmitterModule - Using emitter [NoopEmitter{}] for metrics and alerts, with dimensions [{version=0.22.1}].
+2022-03-10T03:37:56,726 INFO [main] org.apache.druid.server.metrics.MetricsModule - Loaded 3 monitors: org.apache.druid.java.util.metrics.JvmMonitor, org.apache.druid.query.ExecutorServiceMonitor, org.apache.druid.server.initialization.jetty.JettyServerModule$JettyMonitor
+2022-03-10T03:37:56,739 INFO [main] org.apache.druid.cli.CliPeon - Starting up with processors[9], memory[1,029,177,344], maxMemory[1,029,177,344], directMemory[3,221,225,472]. Properties follow.
+2022-03-10T03:37:56,740 INFO [main] org.apache.druid.cli.CliPeon - * awt.toolkit: sun.awt.X11.XToolkit
+2022-03-10T03:37:56,740 INFO [main] org.apache.druid.cli.CliPeon - * druid.coordinator.balancer.strategy: cachingCost
+2022-03-10T03:37:56,740 INFO [main] org.apache.druid.cli.CliPeon - * druid.emitter: noop
+2022-03-10T03:37:56,740 INFO [main] org.apache.druid.cli.CliPeon - * druid.emitter.logging.logLevel: debug
+2022-03-10T03:37:56,741 INFO [main] org.apache.druid.cli.CliPeon - * druid.extensions.loadList: ["druid-histogram", "druid-datasketches", "druid-lookups-cached-global", "postgresql-metadata-storage", "druid-kafka-indexing-service"]
+2022-03-10T03:37:56,741 INFO [main] org.apache.druid.cli.CliPeon - * druid.host: 172.22.0.4
+2022-03-10T03:37:56,741 INFO [main] org.apache.druid.cli.CliPeon - * druid.indexer.fork.property.druid.processing.buffer.sizeBytes: 256MiB
+2022-03-10T03:37:56,741 INFO [main] org.apache.druid.cli.CliPeon - * druid.indexer.logs.directory: /opt/shared/indexing-logs
+2022-03-10T03:37:56,741 INFO [main] org.apache.druid.cli.CliPeon - * druid.indexer.logs.type: file
+2022-03-10T03:37:56,742 INFO [main] org.apache.druid.cli.CliPeon - * druid.indexer.runner.javaOpts: -server -Xms1g -Xmx1g -XX:MaxDirectMemorySize=1g -Duser.timezone=UTC -Dfile.encoding=UTF-8 -XX:+ExitOnOutOfMemoryError -Djava.util.logging.manager=org.apache.logging.log4j.jul.LogManager
+2022-03-10T03:37:56,742 INFO [main] org.apache.druid.cli.CliPeon - * druid.indexer.runner.javaOptsArray: ["-server", "-Xmx1g", "-Xms1g", "-XX:MaxDirectMemorySize=3g", "-Duser.timezone=UTC", "-Dfile.encoding=UTF-8", "-Djava.util.logging.manager=org.apache.logging.log4j.jul.LogManager"]
+2022-03-10T03:37:56,742 INFO [main] org.apache.druid.cli.CliPeon - * druid.indexer.task.baseTaskDir: var/druid/task
+2022-03-10T03:37:56,742 INFO [main] org.apache.druid.cli.CliPeon - * druid.indexer.task.hadoopWorkingPath: var/druid/hadoop-tmp
+2022-03-10T03:37:56,742 INFO [main] org.apache.druid.cli.CliPeon - * druid.indexing.doubleStorage: double
+2022-03-10T03:37:56,742 INFO [main] org.apache.druid.cli.CliPeon - * druid.lookup.enableLookupSyncOnStartup: false
+2022-03-10T03:37:56,742 INFO [main] org.apache.druid.cli.CliPeon - * druid.metadata.storage.connector.connectURI: jdbc:postgresql://postgres:5432/druid
+2022-03-10T03:37:56,743 INFO [main] org.apache.druid.cli.CliPeon - * druid.metadata.storage.connector.host: localhost
+2022-03-10T03:37:56,743 INFO [main] org.apache.druid.cli.CliPeon - * druid.metadata.storage.connector.password: <masked>
+2022-03-10T03:37:56,743 INFO [main] org.apache.druid.cli.CliPeon - * druid.metadata.storage.connector.port: 1527
+2022-03-10T03:37:56,743 INFO [main] org.apache.druid.cli.CliPeon - * druid.metadata.storage.connector.user: druid
+2022-03-10T03:37:56,744 INFO [main] org.apache.druid.cli.CliPeon - * druid.metadata.storage.host: 
+2022-03-10T03:37:56,744 INFO [main] org.apache.druid.cli.CliPeon - * druid.metadata.storage.type: postgresql
+2022-03-10T03:37:56,744 INFO [main] org.apache.druid.cli.CliPeon - * druid.metrics.emitter.dimension.dataSource: demo
+2022-03-10T03:37:56,744 INFO [main] org.apache.druid.cli.CliPeon - * druid.metrics.emitter.dimension.taskId: index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo
+2022-03-10T03:37:56,744 INFO [main] org.apache.druid.cli.CliPeon - * druid.metrics.emitter.dimension.taskType: index_kafka
+2022-03-10T03:37:56,744 INFO [main] org.apache.druid.cli.CliPeon - * druid.monitoring.monitors: ["org.apache.druid.java.util.metrics.JvmMonitor"]
+2022-03-10T03:37:56,744 INFO [main] org.apache.druid.cli.CliPeon - * druid.plaintextPort: 8100
+2022-03-10T03:37:56,744 INFO [main] org.apache.druid.cli.CliPeon - * druid.processing.buffer.sizeBytes: 256MiB
+2022-03-10T03:37:56,745 INFO [main] org.apache.druid.cli.CliPeon - * druid.processing.numMergeBuffers: 2
+2022-03-10T03:37:56,745 INFO [main] org.apache.druid.cli.CliPeon - * druid.processing.numThreads: 2
+2022-03-10T03:37:56,745 INFO [main] org.apache.druid.cli.CliPeon - * druid.selectors.coordinator.serviceName: druid/coordinator
+2022-03-10T03:37:56,745 INFO [main] org.apache.druid.cli.CliPeon - * druid.selectors.indexing.serviceName: druid/overlord
+2022-03-10T03:37:56,745 INFO [main] org.apache.druid.cli.CliPeon - * druid.server.hiddenProperties: ["druid.s3.accessKey","druid.s3.secretKey","druid.metadata.storage.connector.password"]
+2022-03-10T03:37:56,745 INFO [main] org.apache.druid.cli.CliPeon - * druid.server.http.numThreads: 60
+2022-03-10T03:37:56,746 INFO [main] org.apache.druid.cli.CliPeon - * druid.service: druid/middleManager
+2022-03-10T03:37:56,746 INFO [main] org.apache.druid.cli.CliPeon - * druid.sql.enable: true
+2022-03-10T03:37:56,746 INFO [main] org.apache.druid.cli.CliPeon - * druid.startup.logging.logProperties: true
+2022-03-10T03:37:56,746 INFO [main] org.apache.druid.cli.CliPeon - * druid.storage.storageDirectory: /opt/shared/segments
+2022-03-10T03:37:56,746 INFO [main] org.apache.druid.cli.CliPeon - * druid.storage.type: local
+2022-03-10T03:37:56,746 INFO [main] org.apache.druid.cli.CliPeon - * druid.task.executor.enablePlaintextPort: true
+2022-03-10T03:37:56,747 INFO [main] org.apache.druid.cli.CliPeon - * druid.task.executor.enableTlsPort: false
+2022-03-10T03:37:56,747 INFO [main] org.apache.druid.cli.CliPeon - * druid.task.executor.host: 172.22.0.4
+2022-03-10T03:37:56,747 INFO [main] org.apache.druid.cli.CliPeon - * druid.task.executor.plaintextPort: 8091
+2022-03-10T03:37:56,747 INFO [main] org.apache.druid.cli.CliPeon - * druid.task.executor.service: druid/middleManager
+2022-03-10T03:37:56,747 INFO [main] org.apache.druid.cli.CliPeon - * druid.task.executor.tlsPort: -1
+2022-03-10T03:37:56,747 INFO [main] org.apache.druid.cli.CliPeon - * druid.tlsPort: -1
+2022-03-10T03:37:56,748 INFO [main] org.apache.druid.cli.CliPeon - * druid.worker.capacity: 4
+2022-03-10T03:37:56,748 INFO [main] org.apache.druid.cli.CliPeon - * druid.zk.paths.base: /druid
+2022-03-10T03:37:56,748 INFO [main] org.apache.druid.cli.CliPeon - * druid.zk.service.host: zookeeper
+2022-03-10T03:37:56,749 INFO [main] org.apache.druid.cli.CliPeon - * file.encoding: UTF-8
+2022-03-10T03:37:56,749 INFO [main] org.apache.druid.cli.CliPeon - * file.encoding.pkg: sun.io
+2022-03-10T03:37:56,749 INFO [main] org.apache.druid.cli.CliPeon - * file.separator: /
+2022-03-10T03:37:56,749 INFO [main] org.apache.druid.cli.CliPeon - * java.awt.graphicsenv: sun.awt.X11GraphicsEnvironment
+2022-03-10T03:37:56,749 INFO [main] org.apache.druid.cli.CliPeon - * java.awt.printerjob: sun.print.PSPrinterJob
+2022-03-10T03:37:56,749 INFO [main] org.apache.druid.cli.CliPeon - * java.class.path: /tmp/conf/druid/cluster/_common:/tmp/conf/druid/cluster/data/middleManager:lib/jackson-jaxrs-base-2.10.5.jar:lib/opencsv-4.6.jar:lib/joda-time-2.10.5.jar:lib/esri-geometry-api-2.2.0.jar:lib/spymemcached-2.12.3.jar:lib/jaxb-api-2.3.1.jar:lib/metrics-core-4.0.0.jar:lib/checker-qual-2.5.7.jar:lib/joni-2.1.27.jar:lib/jackson-jq-0.0.10.jar:lib/datasketches-memory-1.3.0.jar:lib/jvm-attach-api-1.5.jar:lib/log4j-slf4j-impl-2.15.0.jar:lib/aether-util-0.9.0.M2.jar:lib/error_prone_annotations-2.8.0.jar:lib/jdbi-2.63.1.jar:lib/derbynet-10.14.2.0.jar:lib/maven-repository-metadata-3.1.1.jar:lib/janino-3.0.11.jar:lib/jcl-over-slf4j-1.7.12.jar:lib/jaxb-runtime-2.3.1.jar:lib/asm-tree-7.1.jar:lib/calcite-linq4j-1.21.0.jar:lib/httpclient-4.5.10.jar:lib/jmespath-java-1.12.37.jar:lib/jackson-core-2.10.5.jar:lib/netty-codec-4.1.68.Final.jar:lib/netty-codec-http-4.1.68.Final.jar:lib/log4j-jul-2.15.0.jar:lib/curator-client-4.3.0.jar:lib/jcodings-1.0.43.jar:lib/accessors-smart-1.2.jar:lib/guice-4.1.0.jar:lib/hibernate-validator-5.2.5.Final.jar:lib/netty-common-4.1.68.Final.jar:lib/rhino-1.7.11.jar:lib/druid-services-0.22.1.jar:lib/jackson-dataformat-smile-2.10.5.jar:lib/curator-recipes-4.3.0.jar:lib/async-http-client-2.5.3.jar:lib/maven-aether-provider-3.1.1.jar:lib/aws-java-sdk-s3-1.12.37.jar:lib/javax.el-3.0.0.jar:lib/sigar-1.6.5.132.jar:lib/calcite-core-1.21.0.jar:lib/caffeine-2.8.0.jar:lib/avatica-server-1.17.0.jar:lib/commons-compress-1.21.jar:lib/commons-codec-1.13.jar:lib/stax-ex-1.8.jar:lib/audience-annotations-0.5.0.jar:lib/derby-10.14.2.0.jar:lib/config-magic-0.9.jar:lib/zstd-jni-1.3.3-1.jar:lib/zookeeper-jute-3.5.9.jar:lib/okhttp-1.0.2.jar:lib/json-smart-2.3.jar:lib/aether-connector-file-0.9.0.M2.jar:lib/commons-lang3-3.8.1.jar:lib/datasketches-java-2.0.0.jar:lib/jetty-servlet-9.4.40.v20210413.jar:lib/aopalliance-1.0.jar:lib/jackson-module-guice-2.10.5.jar:lib/guice-servlet-4.1.0.jar:lib/fastutil-8.5.4.jar:lib/netty-handler-proxy-4.1.68.Final.jar:lib/jetty-security-9.4.40.v20210413.jar:lib/aether-impl-0.9.0.M2.jar:lib/json-path-2.3.0.jar:lib/vavr-0.10.2.jar:lib/zookeeper-3.5.9.jar:lib/aws-java-sdk-kms-1.12.37.jar:lib/jetty-continuation-9.4.40.v20210413.jar:lib/async-http-client-netty-utils-2.5.3.jar:lib/commons-beanutils-1.9.4.jar:lib/druid-server-0.22.1.jar:lib/lz4-java-1.7.1.jar:lib/xz-1.8.jar:lib/guice-multibindings-4.1.0.jar:lib/aether-connector-okhttp-0.0.9.jar:lib/maven-model-3.1.1.jar:lib/druid-core-0.22.1.jar:lib/google-http-client-jackson2-1.26.0.jar:lib/commons-collections-3.2.2.jar:lib/reactive-streams-1.0.2.jar:lib/avatica-metrics-1.17.0.jar:lib/FastInfoset-1.2.15.jar:lib/jetty-proxy-9.4.40.v20210413.jar:lib/jetty-util-ajax-9.4.40.v20210413.jar:lib/jackson-annotations-2.10.5.jar:lib/commons-math3-3.6.1.jar:lib/aws-java-sdk-ec2-1.12.37.jar:lib/netty-buffer-4.1.68.Final.jar:lib/commons-io-2.11.0.jar:lib/commons-text-1.3.jar:lib/netty-resolver-4.1.68.Final.jar:lib/maven-artifact-3.6.0.jar:lib/javax.servlet-api-3.1.0.jar:lib/druid-sql-0.22.1.jar:lib/maven-settings-3.1.1.jar:lib/validation-api-1.1.0.Final.jar:lib/shims-0.9.0.jar:lib/fastutil-core-8.5.4.jar:lib/commons-lang-2.6.jar:lib/maven-model-builder-3.1.1.jar:lib/druid-console-0.22.1.jar:lib/jetty-io-9.4.40.v20210413.jar:lib/curator-framework-4.3.0.jar:lib/commons-logging-1.1.1.jar:lib/protobuf-java-3.11.0.jar:lib/netty-handler-4.1.68.Final.jar:lib/log4j-1.2-api-2.15.0.jar:lib/netty-reactive-streams-2.0.0.jar:lib/j2objc-annotations-1.1.jar:lib/maven-settings-builder-3.1.1.jar:lib/icu4j-55.1.jar:lib/classmate-1.1.0.jar:lib/netty-codec-dns-4.1.68.Final.jar:lib/netty-transport-native-unix-common-4.1.68.Final.jar:lib/google-oauth-client-1.26.0.jar:lib/guice-assistedinject-4.1.0.jar:lib/slf4j-api-1.7.25.jar:lib/resilience4j-core-1.3.1.jar:lib/jackson-databind-2.10.5.1.jar:lib/asm-7.1.jar:lib/jboss-logging-3.2.1.Final.jar:lib/javax.activation-api-1.2.0.jar:lib/fastutil-extra-8.5.4.jar:lib/jackson-module-jaxb-annotations-2.10.5.jar:lib/jetty-util-9.4.40.v20210413.jar:lib/jna-4.5.1.jar:lib/commons-net-3.6.jar:lib/avatica-core-1.17.0.jar:lib/druid-gcp-common-0.22.1.jar:lib/jackson-dataformat-cbor-2.10.5.jar:lib/plexus-utils-3.0.24.jar:lib/derbyclient-10.14.2.0.jar:lib/jackson-datatype-joda-2.10.5.jar:lib/commons-collections4-4.2.jar:lib/aether-spi-0.9.0.M2.jar:lib/netty-transport-4.1.68.Final.jar:lib/extendedset-0.22.1.jar:lib/wagon-provider-api-2.4.jar:lib/jakarta.activation-api-1.2.1.jar:lib/jetty-servlets-9.4.40.v20210413.jar:lib/asm-commons-7.1.jar:lib/resilience4j-bulkhead-1.3.1.jar:lib/istack-commons-runtime-3.0.7.jar:lib/jackson-jaxrs-json-provider-2.10.5.jar:lib/airline-0.7.jar:lib/log4j-api-2.15.0.jar:lib/javax.activation-1.2.0.jar:lib/jakarta.xml.bind-api-2.3.2.jar:lib/curator-x-discovery-4.3.0.jar:lib/jetty-http-9.4.40.v20210413.jar:lib/httpcore-4.4.11.jar:lib/google-http-client-1.26.0.jar:lib/netty-transport-native-epoll-4.1.68.Final-linux-x86_64.jar:lib/asm-analysis-7.1.jar:lib/jersey-core-1.19.3.jar:lib/aggdesigner-algorithm-6.0.jar:lib/netty-3.10.6.Final.jar:lib/javax.el-api-3.0.0.jar:lib/aws-java-sdk-core-1.12.37.jar:lib/netty-resolver-dns-4.1.68.Final.jar:lib/jackson-jaxrs-smile-provider-2.10.5.jar:lib/aether-api-0.9.0.M2.jar:lib/vavr-match-0.10.2.jar:lib/jsr311-api-1.1.1.jar:lib/jersey-server-1.19.3.jar:lib/ion-java-1.0.2.jar:lib/txw2-2.3.1.jar:lib/disruptor-3.3.6.jar:lib/log4j-core-2.15.0.jar:lib/commons-pool2-2.2.jar:lib/druid-processing-0.22.1.jar:lib/javax.inject-1.jar:lib/jetty-client-9.4.40.v20210413.jar:lib/tesla-aether-0.0.5.jar:lib/jersey-servlet-1.19.3.jar:lib/jersey-guice-1.19.3.jar:lib/RoaringBitmap-0.9.0.jar:lib/druid-indexing-hadoop-0.22.1.jar:lib/jsr305-2.0.1.jar:lib/jetty-server-9.4.40.v20210413.jar:lib/druid-indexing-service-0.22.1.jar:lib/plexus-interpolation-1.19.jar:lib/druid-aws-common-0.22.1.jar:lib/jackson-datatype-guava-2.10.5.jar:lib/commons-compiler-3.0.11.jar:lib/jetty-rewrite-9.4.40.v20210413.jar:lib/compress-lzf-1.0.4.jar:lib/google-api-client-1.26.0.jar:lib/antlr4-runtime-4.5.1.jar:lib/druid-hll-0.22.1.jar:lib/commons-dbcp2-2.0.1.jar:lib/guava-16.0.1.jar:lib/cron-scheduler-0.1.jar:lib/netty-codec-socks-4.1.68.Final.jar:
+2022-03-10T03:37:56,750 INFO [main] org.apache.druid.cli.CliPeon - * java.class.version: 52.0
+2022-03-10T03:37:56,750 INFO [main] org.apache.druid.cli.CliPeon - * java.endorsed.dirs: /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed
+2022-03-10T03:37:56,750 INFO [main] org.apache.druid.cli.CliPeon - * java.ext.dirs: /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext
+2022-03-10T03:37:56,750 INFO [main] org.apache.druid.cli.CliPeon - * java.home: /usr/lib/jvm/java-8-openjdk-amd64/jre
+2022-03-10T03:37:56,750 INFO [main] org.apache.druid.cli.CliPeon - * java.io.tmpdir: var/tmp
+2022-03-10T03:37:56,750 INFO [main] org.apache.druid.cli.CliPeon - * java.library.path: /usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+2022-03-10T03:37:56,750 INFO [main] org.apache.druid.cli.CliPeon - * java.runtime.name: OpenJDK Runtime Environment
+2022-03-10T03:37:56,751 INFO [main] org.apache.druid.cli.CliPeon - * java.runtime.version: 1.8.0_275-8u275-b01-1~deb9u1-b01
+2022-03-10T03:37:56,751 INFO [main] org.apache.druid.cli.CliPeon - * java.specification.name: Java Platform API Specification
+2022-03-10T03:37:56,751 INFO [main] org.apache.druid.cli.CliPeon - * java.specification.vendor: Oracle Corporation
+2022-03-10T03:37:56,751 INFO [main] org.apache.druid.cli.CliPeon - * java.specification.version: 1.8
+2022-03-10T03:37:56,751 INFO [main] org.apache.druid.cli.CliPeon - * java.util.logging.manager: org.apache.logging.log4j.jul.LogManager
+2022-03-10T03:37:56,751 INFO [main] org.apache.druid.cli.CliPeon - * java.vendor: Oracle Corporation
+2022-03-10T03:37:56,751 INFO [main] org.apache.druid.cli.CliPeon - * java.vendor.url: http://java.oracle.com/
+2022-03-10T03:37:56,751 INFO [main] org.apache.druid.cli.CliPeon - * java.vendor.url.bug: http://bugreport.sun.com/bugreport/
+2022-03-10T03:37:56,751 INFO [main] org.apache.druid.cli.CliPeon - * java.version: 1.8.0_275
+2022-03-10T03:37:56,752 INFO [main] org.apache.druid.cli.CliPeon - * java.vm.info: mixed mode
+2022-03-10T03:37:56,752 INFO [main] org.apache.druid.cli.CliPeon - * java.vm.name: OpenJDK 64-Bit Server VM
+2022-03-10T03:37:56,752 INFO [main] org.apache.druid.cli.CliPeon - * java.vm.specification.name: Java Virtual Machine Specification
+2022-03-10T03:37:56,752 INFO [main] org.apache.druid.cli.CliPeon - * java.vm.specification.vendor: Oracle Corporation
+2022-03-10T03:37:56,752 INFO [main] org.apache.druid.cli.CliPeon - * java.vm.specification.version: 1.8
+2022-03-10T03:37:56,752 INFO [main] org.apache.druid.cli.CliPeon - * java.vm.vendor: Oracle Corporation
+2022-03-10T03:37:56,752 INFO [main] org.apache.druid.cli.CliPeon - * java.vm.version: 25.275-b01
+2022-03-10T03:37:56,753 INFO [main] org.apache.druid.cli.CliPeon - * line.separator: 
+
+2022-03-10T03:37:56,753 INFO [main] org.apache.druid.cli.CliPeon - * log4j.shutdownCallbackRegistry: org.apache.druid.common.config.Log4jShutdown
+2022-03-10T03:37:56,753 INFO [main] org.apache.druid.cli.CliPeon - * log4j.shutdownHookEnabled: true
+2022-03-10T03:37:56,753 INFO [main] org.apache.druid.cli.CliPeon - * log4j2.is.webapp: false
+2022-03-10T03:37:56,753 INFO [main] org.apache.druid.cli.CliPeon - * os.arch: amd64
+2022-03-10T03:37:56,753 INFO [main] org.apache.druid.cli.CliPeon - * os.name: Linux
+2022-03-10T03:37:56,754 INFO [main] org.apache.druid.cli.CliPeon - * os.version: 5.10.76-linuxkit
+2022-03-10T03:37:56,754 INFO [main] org.apache.druid.cli.CliPeon - * path.separator: :
+2022-03-10T03:37:56,754 INFO [main] org.apache.druid.cli.CliPeon - * sun.arch.data.model: 64
+2022-03-10T03:37:56,754 INFO [main] org.apache.druid.cli.CliPeon - * sun.boot.class.path: /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes
+2022-03-10T03:37:56,754 INFO [main] org.apache.druid.cli.CliPeon - * sun.boot.library.path: /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64
+2022-03-10T03:37:56,754 INFO [main] org.apache.druid.cli.CliPeon - * sun.cpu.endian: little
+2022-03-10T03:37:56,755 INFO [main] org.apache.druid.cli.CliPeon - * sun.cpu.isalist: 
+2022-03-10T03:37:56,755 INFO [main] org.apache.druid.cli.CliPeon - * sun.io.unicode.encoding: UnicodeLittle
+2022-03-10T03:37:56,755 INFO [main] org.apache.druid.cli.CliPeon - * sun.java.command: org.apache.druid.cli.Main internal peon var/druid/task/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/task.json var/druid/task/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/9a021952-67a9-4e32-90c2-16d86dcb96cc/status.json var/druid/task/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/9a021952-67a9-4e32-90c2-16d86dcb96cc/report.json --loadBroadcastSegments true
+2022-03-10T03:37:56,755 INFO [main] org.apache.druid.cli.CliPeon - * sun.java.launcher: SUN_STANDARD
+2022-03-10T03:37:56,755 INFO [main] org.apache.druid.cli.CliPeon - * sun.jnu.encoding: UTF-8
+2022-03-10T03:37:56,755 INFO [main] org.apache.druid.cli.CliPeon - * sun.management.compiler: HotSpot 64-Bit Tiered Compilers
+2022-03-10T03:37:56,755 INFO [main] org.apache.druid.cli.CliPeon - * sun.os.patch.level: unknown
+2022-03-10T03:37:56,755 INFO [main] org.apache.druid.cli.CliPeon - * user.dir: /opt/druid
+2022-03-10T03:37:56,756 INFO [main] org.apache.druid.cli.CliPeon - * user.home: /opt/druid
+2022-03-10T03:37:56,756 INFO [main] org.apache.druid.cli.CliPeon - * user.language: en
+2022-03-10T03:37:56,756 INFO [main] org.apache.druid.cli.CliPeon - * user.name: druid
+2022-03-10T03:37:56,756 INFO [main] org.apache.druid.cli.CliPeon - * user.timezone: UTC
+2022-03-10T03:37:56,769 WARN [main] org.apache.druid.indexing.common.config.TaskConfig - Batch processing mode argument value is null or not valid:[null], defaulting to[CLOSED_SEGMENTS] 
+2022-03-10T03:37:56,770 INFO [main] org.apache.druid.indexing.common.config.TaskConfig - Batch processing mode:[CLOSED_SEGMENTS]
+2022-03-10T03:37:56,889 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.5.9-83df9301aa5c2a5d284a9940177808c01bc35cef, built on 01/06/2021 20:03 GMT
+2022-03-10T03:37:56,889 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:host.name=f1739967c20d
+2022-03-10T03:37:56,889 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_275
+2022-03-10T03:37:56,890 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2022-03-10T03:37:56,890 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre
+2022-03-10T03:37:56,890 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/tmp/conf/druid/cluster/_common:/tmp/conf/druid/cluster/data/middleManager:lib/jackson-jaxrs-base-2.10.5.jar:lib/opencsv-4.6.jar:lib/joda-time-2.10.5.jar:lib/esri-geometry-api-2.2.0.jar:lib/spymemcached-2.12.3.jar:lib/jaxb-api-2.3.1.jar:lib/metrics-core-4.0.0.jar:lib/checker-qual-2.5.7.jar:lib/joni-2.1.27.jar:lib/jackson-jq-0.0.10.jar:lib/datasketches-memory-1.3.0.jar:lib/jvm-attach-api-1.5.jar:lib/log4j-slf4j-impl-2.15.0.jar:lib/aether-util-0.9.0.M2.jar:lib/error_prone_annotations-2.8.0.jar:lib/jdbi-2.63.1.jar:lib/derbynet-10.14.2.0.jar:lib/maven-repository-metadata-3.1.1.jar:lib/janino-3.0.11.jar:lib/jcl-over-slf4j-1.7.12.jar:lib/jaxb-runtime-2.3.1.jar:lib/asm-tree-7.1.jar:lib/calcite-linq4j-1.21.0.jar:lib/httpclient-4.5.10.jar:lib/jmespath-java-1.12.37.jar:lib/jackson-core-2.10.5.jar:lib/netty-codec-4.1.68.Final.jar:lib/netty-codec-http-4.1.68.Final.jar:lib/log4j-jul-2.15.0.jar:lib/curator-client-4.3.0.jar:lib/jcodings-1.0.43.jar:lib/accessors-smart-1.2.jar:lib/guice-4.1.0.jar:lib/hibernate-validator-5.2.5.Final.jar:lib/netty-common-4.1.68.Final.jar:lib/rhino-1.7.11.jar:lib/druid-services-0.22.1.jar:lib/jackson-dataformat-smile-2.10.5.jar:lib/curator-recipes-4.3.0.jar:lib/async-http-client-2.5.3.jar:lib/maven-aether-provider-3.1.1.jar:lib/aws-java-sdk-s3-1.12.37.jar:lib/javax.el-3.0.0.jar:lib/sigar-1.6.5.132.jar:lib/calcite-core-1.21.0.jar:lib/caffeine-2.8.0.jar:lib/avatica-server-1.17.0.jar:lib/commons-compress-1.21.jar:lib/commons-codec-1.13.jar:lib/stax-ex-1.8.jar:lib/audience-annotations-0.5.0.jar:lib/derby-10.14.2.0.jar:lib/config-magic-0.9.jar:lib/zstd-jni-1.3.3-1.jar:lib/zookeeper-jute-3.5.9.jar:lib/okhttp-1.0.2.jar:lib/json-smart-2.3.jar:lib/aether-connector-file-0.9.0.M2.jar:lib/commons-lang3-3.8.1.jar:lib/datasketches-java-2.0.0.jar:lib/jetty-servlet-9.4.40.v20210413.jar:lib/aopalliance-1.0.jar:lib/jackson-module-guice-2.10.5.jar:lib/guice-servlet-4.1.0.jar:lib/fastutil-8.5.4.jar:lib/netty-handler-proxy-4.1.68.Final.jar:lib/jetty-security-9.4.40.v20210413.jar:lib/aether-impl-0.9.0.M2.jar:lib/json-path-2.3.0.jar:lib/vavr-0.10.2.jar:lib/zookeeper-3.5.9.jar:lib/aws-java-sdk-kms-1.12.37.jar:lib/jetty-continuation-9.4.40.v20210413.jar:lib/async-http-client-netty-utils-2.5.3.jar:lib/commons-beanutils-1.9.4.jar:lib/druid-server-0.22.1.jar:lib/lz4-java-1.7.1.jar:lib/xz-1.8.jar:lib/guice-multibindings-4.1.0.jar:lib/aether-connector-okhttp-0.0.9.jar:lib/maven-model-3.1.1.jar:lib/druid-core-0.22.1.jar:lib/google-http-client-jackson2-1.26.0.jar:lib/commons-collections-3.2.2.jar:lib/reactive-streams-1.0.2.jar:lib/avatica-metrics-1.17.0.jar:lib/FastInfoset-1.2.15.jar:lib/jetty-proxy-9.4.40.v20210413.jar:lib/jetty-util-ajax-9.4.40.v20210413.jar:lib/jackson-annotations-2.10.5.jar:lib/commons-math3-3.6.1.jar:lib/aws-java-sdk-ec2-1.12.37.jar:lib/netty-buffer-4.1.68.Final.jar:lib/commons-io-2.11.0.jar:lib/commons-text-1.3.jar:lib/netty-resolver-4.1.68.Final.jar:lib/maven-artifact-3.6.0.jar:lib/javax.servlet-api-3.1.0.jar:lib/druid-sql-0.22.1.jar:lib/maven-settings-3.1.1.jar:lib/validation-api-1.1.0.Final.jar:lib/shims-0.9.0.jar:lib/fastutil-core-8.5.4.jar:lib/commons-lang-2.6.jar:lib/maven-model-builder-3.1.1.jar:lib/druid-console-0.22.1.jar:lib/jetty-io-9.4.40.v20210413.jar:lib/curator-framework-4.3.0.jar:lib/commons-logging-1.1.1.jar:lib/protobuf-java-3.11.0.jar:lib/netty-handler-4.1.68.Final.jar:lib/log4j-1.2-api-2.15.0.jar:lib/netty-reactive-streams-2.0.0.jar:lib/j2objc-annotations-1.1.jar:lib/maven-settings-builder-3.1.1.jar:lib/icu4j-55.1.jar:lib/classmate-1.1.0.jar:lib/netty-codec-dns-4.1.68.Final.jar:lib/netty-transport-native-unix-common-4.1.68.Final.jar:lib/google-oauth-client-1.26.0.jar:lib/guice-assistedinject-4.1.0.jar:lib/slf4j-api-1.7.25.jar:lib/resilience4j-core-1.3.1.jar:lib/jackson-databind-2.10.5.1.jar:lib/asm-7.1.jar:lib/jboss-logging-3.2.1.Final.jar:lib/javax.activation-api-1.2.0.jar:lib/fastutil-extra-8.5.4.jar:lib/jackson-module-jaxb-annotations-2.10.5.jar:lib/jetty-util-9.4.40.v20210413.jar:lib/jna-4.5.1.jar:lib/commons-net-3.6.jar:lib/avatica-core-1.17.0.jar:lib/druid-gcp-common-0.22.1.jar:lib/jackson-dataformat-cbor-2.10.5.jar:lib/plexus-utils-3.0.24.jar:lib/derbyclient-10.14.2.0.jar:lib/jackson-datatype-joda-2.10.5.jar:lib/commons-collections4-4.2.jar:lib/aether-spi-0.9.0.M2.jar:lib/netty-transport-4.1.68.Final.jar:lib/extendedset-0.22.1.jar:lib/wagon-provider-api-2.4.jar:lib/jakarta.activation-api-1.2.1.jar:lib/jetty-servlets-9.4.40.v20210413.jar:lib/asm-commons-7.1.jar:lib/resilience4j-bulkhead-1.3.1.jar:lib/istack-commons-runtime-3.0.7.jar:lib/jackson-jaxrs-json-provider-2.10.5.jar:lib/airline-0.7.jar:lib/log4j-api-2.15.0.jar:lib/javax.activation-1.2.0.jar:lib/jakarta.xml.bind-api-2.3.2.jar:lib/curator-x-discovery-4.3.0.jar:lib/jetty-http-9.4.40.v20210413.jar:lib/httpcore-4.4.11.jar:lib/google-http-client-1.26.0.jar:lib/netty-transport-native-epoll-4.1.68.Final-linux-x86_64.jar:lib/asm-analysis-7.1.jar:lib/jersey-core-1.19.3.jar:lib/aggdesigner-algorithm-6.0.jar:lib/netty-3.10.6.Final.jar:lib/javax.el-api-3.0.0.jar:lib/aws-java-sdk-core-1.12.37.jar:lib/netty-resolver-dns-4.1.68.Final.jar:lib/jackson-jaxrs-smile-provider-2.10.5.jar:lib/aether-api-0.9.0.M2.jar:lib/vavr-match-0.10.2.jar:lib/jsr311-api-1.1.1.jar:lib/jersey-server-1.19.3.jar:lib/ion-java-1.0.2.jar:lib/txw2-2.3.1.jar:lib/disruptor-3.3.6.jar:lib/log4j-core-2.15.0.jar:lib/commons-pool2-2.2.jar:lib/druid-processing-0.22.1.jar:lib/javax.inject-1.jar:lib/jetty-client-9.4.40.v20210413.jar:lib/tesla-aether-0.0.5.jar:lib/jersey-servlet-1.19.3.jar:lib/jersey-guice-1.19.3.jar:lib/RoaringBitmap-0.9.0.jar:lib/druid-indexing-hadoop-0.22.1.jar:lib/jsr305-2.0.1.jar:lib/jetty-server-9.4.40.v20210413.jar:lib/druid-indexing-service-0.22.1.jar:lib/plexus-interpolation-1.19.jar:lib/druid-aws-common-0.22.1.jar:lib/jackson-datatype-guava-2.10.5.jar:lib/commons-compiler-3.0.11.jar:lib/jetty-rewrite-9.4.40.v20210413.jar:lib/compress-lzf-1.0.4.jar:lib/google-api-client-1.26.0.jar:lib/antlr4-runtime-4.5.1.jar:lib/druid-hll-0.22.1.jar:lib/commons-dbcp2-2.0.1.jar:lib/guava-16.0.1.jar:lib/cron-scheduler-0.1.jar:lib/netty-codec-socks-4.1.68.Final.jar:
+2022-03-10T03:37:56,890 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+2022-03-10T03:37:56,890 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=var/tmp
+2022-03-10T03:37:56,890 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2022-03-10T03:37:56,890 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:os.name=Linux
+2022-03-10T03:37:56,890 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:os.arch=amd64
+2022-03-10T03:37:56,890 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:os.version=5.10.76-linuxkit
+2022-03-10T03:37:56,890 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:user.name=druid
+2022-03-10T03:37:56,890 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:user.home=/opt/druid
+2022-03-10T03:37:56,890 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/opt/druid
+2022-03-10T03:37:56,890 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:os.memory.free=793MB
+2022-03-10T03:37:56,890 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:os.memory.max=981MB
+2022-03-10T03:37:56,891 INFO [main] org.apache.zookeeper.ZooKeeper - Client environment:os.memory.total=981MB
+2022-03-10T03:37:56,892 INFO [main] org.apache.curator.utils.Compatibility - Using emulated InjectSessionExpiration
+2022-03-10T03:37:56,972 INFO [main] org.skife.config.ConfigurationObjectFactory - Using method itself for [druid.computation.buffer.poolCacheMaxCount, ${base_path}.buffer.poolCacheMaxCount] on [org.apache.druid.query.DruidProcessingConfig#poolCacheMaxCount()]
+2022-03-10T03:37:56,973 INFO [main] org.skife.config.ConfigurationObjectFactory - Using method itself for [${base_path}.merge.pool.awaitShutdownMillis] on [org.apache.druid.query.DruidProcessingConfig#getMergePoolAwaitShutdownMillis()]
+2022-03-10T03:37:56,974 INFO [main] org.skife.config.ConfigurationObjectFactory - Assigning value [256MiB] for [druid.processing.buffer.sizeBytes] on [org.apache.druid.query.DruidProcessingConfig#intermediateComputeSizeBytesConfigured()]
+2022-03-10T03:37:56,975 INFO [main] org.skife.config.ConfigurationObjectFactory - Assigning value [2] for [druid.processing.numThreads] on [org.apache.druid.query.DruidProcessingConfig#getNumThreadsConfigured()]
+2022-03-10T03:37:56,975 INFO [main] org.skife.config.ConfigurationObjectFactory - Assigning value [2] for [druid.processing.numMergeBuffers] on [org.apache.druid.query.DruidProcessingConfig#getNumMergeBuffersConfigured()]
+2022-03-10T03:37:56,975 INFO [main] org.skife.config.ConfigurationObjectFactory - Using method itself for [${base_path}.columnCache.sizeBytes] on [org.apache.druid.query.DruidProcessingConfig#columnCacheSizeBytes()]
+2022-03-10T03:37:56,975 INFO [main] org.skife.config.ConfigurationObjectFactory - Using method itself for [${base_path}.fifo] on [org.apache.druid.query.DruidProcessingConfig#isFifo()]
+2022-03-10T03:37:56,976 INFO [main] org.skife.config.ConfigurationObjectFactory - Using method itself for [${base_path}.tmpDir] on [org.apache.druid.query.DruidProcessingConfig#getTmpDir()]
+2022-03-10T03:37:56,976 INFO [main] org.skife.config.ConfigurationObjectFactory - Using method itself for [${base_path}.merge.useParallelMergePool] on [org.apache.druid.query.DruidProcessingConfig#useParallelMergePoolConfigured()]
+2022-03-10T03:37:56,976 INFO [main] org.skife.config.ConfigurationObjectFactory - Using method itself for [${base_path}.merge.pool.parallelism] on [org.apache.druid.query.DruidProcessingConfig#getMergePoolParallelismConfigured()]
+2022-03-10T03:37:56,977 INFO [main] org.skife.config.ConfigurationObjectFactory - Using method itself for [${base_path}.merge.pool.defaultMaxQueryParallelism] on [org.apache.druid.query.DruidProcessingConfig#getMergePoolDefaultMaxQueryParallelism()]
+2022-03-10T03:37:56,977 INFO [main] org.skife.config.ConfigurationObjectFactory - Using method itself for [${base_path}.merge.task.targetRunTimeMillis] on [org.apache.druid.query.DruidProcessingConfig#getMergePoolTargetTaskRunTimeMillis()]
+2022-03-10T03:37:56,977 INFO [main] org.skife.config.ConfigurationObjectFactory - Using method itself for [${base_path}.merge.task.initialYieldNumRows] on [org.apache.druid.query.DruidProcessingConfig#getMergePoolTaskInitialYieldRows()]
+2022-03-10T03:37:56,977 INFO [main] org.skife.config.ConfigurationObjectFactory - Using method itself for [${base_path}.merge.task.smallBatchNumRows] on [org.apache.druid.query.DruidProcessingConfig#getMergePoolSmallBatchRows()]
+2022-03-10T03:37:56,978 INFO [main] org.skife.config.ConfigurationObjectFactory - Assigning default value [processing-%s] for [${base_path}.formatString] on [org.apache.druid.java.util.common.concurrent.ExecutorServiceConfig#getFormatString()]
+2022-03-10T03:37:57,045 INFO [main] org.apache.druid.segment.loading.SegmentLocalCacheManager - Using storage location strategy: [LeastBytesUsedStorageLocationSelectorStrategy]
+2022-03-10T03:37:57,152 INFO [main] org.apache.druid.guice.StorageNodeModule - Segment cache not configured on ServerType [indexer-executor]. It will not be assignable for segment placement
+2022-03-10T03:37:57,217 INFO [main] org.eclipse.jetty.util.log - Logging initialized @4365ms to org.eclipse.jetty.util.log.Slf4jLog
+2022-03-10T03:37:57,229 INFO [main] org.apache.druid.server.initialization.jetty.JettyServerModule - Creating http connector with port [8100]
+2022-03-10T03:37:57,363 WARN [main] org.eclipse.jetty.server.handler.gzip.GzipHandler - minGzipSize of 0 is inefficient for short content, break even is size 23
+2022-03-10T03:37:57,417 INFO [main] org.apache.druid.offheap.OffheapBufferGenerator - Allocating new intermediate processing buffer[0] of size[268,435,456]
+2022-03-10T03:37:57,537 INFO [main] org.apache.druid.offheap.OffheapBufferGenerator - Allocating new intermediate processing buffer[1] of size[268,435,456]
+2022-03-10T03:37:57,685 INFO [main] org.apache.druid.offheap.OffheapBufferGenerator - Allocating new result merging buffer[0] of size[268,435,456]
+2022-03-10T03:37:57,864 INFO [main] org.apache.druid.offheap.OffheapBufferGenerator - Allocating new result merging buffer[1] of size[268,435,456]
+2022-03-10T03:37:58,034 INFO [main] org.apache.druid.java.util.common.lifecycle.Lifecycle - Starting lifecycle [module] stage [INIT]
+2022-03-10T03:37:58,035 INFO [main] org.apache.druid.java.util.common.lifecycle.Lifecycle - Starting lifecycle [module] stage [NORMAL]
+2022-03-10T03:37:58,041 INFO [main] org.apache.curator.framework.imps.CuratorFrameworkImpl - Starting
+2022-03-10T03:37:58,047 INFO [main] org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=zookeeper sessionTimeout=30000 watcher=org.apache.curator.ConnectionState@1537c744
+2022-03-10T03:37:58,053 INFO [main] org.apache.zookeeper.common.X509Util - Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation
+2022-03-10T03:37:58,059 INFO [main] org.apache.zookeeper.ClientCnxnSocket - jute.maxbuffer value is 4194304 Bytes
+2022-03-10T03:37:58,071 INFO [main] org.apache.zookeeper.ClientCnxn - zookeeper.request.timeout value is 0. feature enabled=
+2022-03-10T03:37:58,088 INFO [main] org.apache.curator.framework.imps.CuratorFrameworkImpl - Default schema
+2022-03-10T03:37:58,092 INFO [main-SendThread(zookeeper:2181)] org.apache.zookeeper.ClientCnxn - Opening socket connection to server zookeeper/172.22.0.2:2181. Will not attempt to authenticate using SASL (unknown error)
+2022-03-10T03:37:58,120 INFO [main-SendThread(zookeeper:2181)] org.apache.zookeeper.ClientCnxn - Socket connection established, initiating session, client: /172.22.0.4:60206, server: zookeeper/172.22.0.2:2181
+2022-03-10T03:37:58,215 INFO [main-SendThread(zookeeper:2181)] org.apache.zookeeper.ClientCnxn - Session establishment complete on server zookeeper/172.22.0.2:2181, sessionid = 0x10000248b16000a, negotiated timeout = 30000
+2022-03-10T03:37:58,220 INFO [main-EventThread] org.apache.curator.framework.state.ConnectionStateManager - State change: CONNECTED
+2022-03-10T03:37:58,258 INFO [main-EventThread] org.apache.curator.framework.imps.EnsembleTracker - New config event received: {}
+2022-03-10T03:37:58,259 INFO [main-EventThread] org.apache.curator.framework.imps.EnsembleTracker - New config event received: {}
+2022-03-10T03:37:58,288 WARN [NodeRoleWatcher[OVERLORD]] org.apache.druid.curator.discovery.CuratorDruidNodeDiscoveryProvider$NodeRoleWatcher - Ignored event type[CONNECTION_RECONNECTED] for node watcher of role[overlord].
+2022-03-10T03:37:58,288 WARN [NodeRoleWatcher[COORDINATOR]] org.apache.druid.curator.discovery.CuratorDruidNodeDiscoveryProvider$NodeRoleWatcher - Ignored event type[CONNECTION_RECONNECTED] for node watcher of role[coordinator].
+2022-03-10T03:37:58,296 INFO [main] org.apache.druid.indexing.worker.executor.ExecutorLifecycle - Running with task: {
+  "type" : "index_kafka",
+  "id" : "index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo",
+  "resource" : {
+    "availabilityGroup" : "index_kafka_demo_6cfa3da9bcd17b0",
+    "requiredCapacity" : 1
+  },
+  "dataSchema" : {
+    "dataSource" : "demo",
+    "timestampSpec" : {
+      "column" : "timestamp",
+      "format" : "posix",
+      "missingValue" : null
+    },
+    "dimensionsSpec" : {
+      "dimensions" : [ {
+        "type" : "long",
+        "name" : "data_id",
+        "multiValueHandling" : "SORTED_ARRAY",
+        "createBitmapIndex" : false
+      }, {
+        "type" : "string",
+        "name" : "name",
+        "multiValueHandling" : "SORTED_ARRAY",
+        "createBitmapIndex" : true
+      } ],
+      "dimensionExclusions" : [ "__time", "timestamp" ]
+    },
+    "metricsSpec" : [ ],
+    "granularitySpec" : {
+      "type" : "uniform",
+      "segmentGranularity" : "HOUR",
+      "queryGranularity" : {
+        "type" : "none"
+      },
+      "rollup" : false,
+      "intervals" : [ ]
+    },
+    "transformSpec" : {
+      "filter" : null,
+      "transforms" : [ ]
+    }
+  },
+  "tuningConfig" : {
+    "type" : "KafkaTuningConfig",
+    "appendableIndexSpec" : {
+      "type" : "onheap"
+    },
+    "maxRowsInMemory" : 1000000,
+    "maxBytesInMemory" : 0,
+    "skipBytesInMemoryOverheadCheck" : false,
+    "maxRowsPerSegment" : 5000000,
+    "maxTotalRows" : null,
+    "intermediatePersistPeriod" : "PT10M",
+    "basePersistDirectory" : "/opt/druid/var/tmp/druid-realtime-persist8798900564544733078",
+    "maxPendingPersists" : 0,
+    "indexSpec" : {
+      "bitmap" : {
+        "type" : "roaring",
+        "compressRunOnSerialization" : true
+      },
+      "dimensionCompression" : "lz4",
+      "metricCompression" : "lz4",
+      "longEncoding" : "longs",
+      "segmentLoader" : null
+    },
+    "indexSpecForIntermediatePersists" : {
+      "bitmap" : {
+        "type" : "roaring",
+        "compressRunOnSerialization" : true
+      },
+      "dimensionCompression" : "lz4",
+      "metricCompression" : "lz4",
+      "longEncoding" : "longs",
+      "segmentLoader" : null
+    },
+    "reportParseExceptions" : false,
+    "handoffConditionTimeout" : 0,
+    "resetOffsetAutomatically" : false,
+    "segmentWriteOutMediumFactory" : null,
+    "intermediateHandoffPeriod" : "P2147483647D",
+    "logParseExceptions" : false,
+    "maxParseExceptions" : 2147483647,
+    "maxSavedParseExceptions" : 0,
+    "skipSequenceNumberAvailabilityCheck" : false
+  },
+  "ioConfig" : {
+    "type" : "kafka",
+    "taskGroupId" : 0,
+    "baseSequenceName" : "index_kafka_demo_6cfa3da9bcd17b0",
+    "startPartitions" : {
+      "type" : "end",
+      "stream" : "demo",
+      "topic" : "demo",
+      "partitionSequenceNumberMap" : {
+        "0" : 596
+      },
+      "partitionOffsetMap" : {
+        "0" : 596
+      }
+    },
+    "endPartitions" : {
+      "type" : "end",
+      "stream" : "demo",
+      "topic" : "demo",
+      "partitionSequenceNumberMap" : {
+        "0" : 9223372036854775807
+      },
+      "partitionOffsetMap" : {
+        "0" : 9223372036854775807
+      }
+    },
+    "startSequenceNumbers" : {
+      "type" : "start",
+      "stream" : "demo",
+      "topic" : "demo",
+      "partitionSequenceNumberMap" : {
+        "0" : 596
+      },
+      "partitionOffsetMap" : {
+        "0" : 596
+      },
+      "exclusivePartitions" : [ ]
+    },
+    "endSequenceNumbers" : {
+      "type" : "end",
+      "stream" : "demo",
+      "topic" : "demo",
+      "partitionSequenceNumberMap" : {
+        "0" : 9223372036854775807
+      },
+      "partitionOffsetMap" : {
+        "0" : 9223372036854775807
+      }
+    },
+    "consumerProperties" : {
+      "bootstrap.servers" : "kafka:9092"
+    },
+    "pollTimeout" : 100,
+    "useTransaction" : true,
+    "minimumMessageTime" : null,
+    "maximumMessageTime" : null,
+    "inputFormat" : {
+      "type" : "json",
+      "flattenSpec" : {
+        "useFieldDiscovery" : true,
+        "fields" : [ ]
+      },
+      "featureSpec" : { }
+    }
+  },
+  "context" : {
+    "checkpoints" : "{\"0\":{\"0\":596}}",
+    "useLineageBasedSegmentAllocation" : true,
+    "IS_INCREMENTAL_HANDOFF_SUPPORTED" : true,
+    "forceTimeChunkLock" : true
+  },
+  "groupId" : "index_kafka_demo",
+  "dataSource" : "demo"
+}
+2022-03-10T03:37:58,301 INFO [main] org.apache.druid.indexing.worker.executor.ExecutorLifecycle - Attempting to lock file[var/druid/task/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/lock].
+2022-03-10T03:37:58,303 INFO [main] org.apache.druid.indexing.worker.executor.ExecutorLifecycle - Acquired lock file[var/druid/task/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/lock] in 2ms.
+2022-03-10T03:37:58,306 INFO [main] org.apache.druid.segment.loading.SegmentLocalCacheManager - Using storage location strategy: [LeastBytesUsedStorageLocationSelectorStrategy]
+2022-03-10T03:37:58,309 INFO [task-runner-0-priority-0] org.apache.druid.indexing.overlord.SingleTaskBackgroundRunner - Running task: index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo
+2022-03-10T03:37:58,318 INFO [main] org.apache.druid.server.coordination.SegmentLoadDropHandler - Starting...
+2022-03-10T03:37:58,318 INFO [main] org.apache.druid.server.coordination.CuratorDataSegmentServerAnnouncer - Announcing self[DruidServerMetadata{name='172.22.0.4:8100', hostAndPort='172.22.0.4:8100', hostAndTlsPort='null', maxSize=0, tier='_default_tier', type=indexer-executor, priority=0}] at [/druid/announcements/172.22.0.4:8100]
+2022-03-10T03:37:58,321 INFO [NodeRoleWatcher[COORDINATOR]] org.apache.druid.discovery.BaseNodeRoleWatcher - Node[http://172.22.0.6:8081] of role[coordinator] detected.
+2022-03-10T03:37:58,321 INFO [NodeRoleWatcher[OVERLORD]] org.apache.druid.discovery.BaseNodeRoleWatcher - Node[http://172.22.0.6:8081] of role[overlord] detected.
+2022-03-10T03:37:58,322 INFO [NodeRoleWatcher[OVERLORD]] org.apache.druid.discovery.BaseNodeRoleWatcher - Node watcher of role[overlord] is now initialized.
+2022-03-10T03:37:58,321 INFO [NodeRoleWatcher[COORDINATOR]] org.apache.druid.discovery.BaseNodeRoleWatcher - Node watcher of role[coordinator] is now initialized.
+2022-03-10T03:37:58,325 INFO [main] org.apache.druid.server.coordination.SegmentLoadDropHandler - Started.
+2022-03-10T03:37:58,326 INFO [main] org.apache.druid.server.coordination.ZkCoordinator - Starting zkCoordinator for server[172.22.0.4:8100]
+2022-03-10T03:37:58,349 INFO [main] org.apache.druid.java.util.common.lifecycle.Lifecycle - Starting lifecycle [module] stage [SERVER]
+2022-03-10T03:37:58,357 INFO [main] org.eclipse.jetty.server.Server - jetty-9.4.40.v20210413; built: 2021-04-13T20:42:42.668Z; git: b881a572662e1943a14ae12e7e1207989f218b74; jvm 1.8.0_275-8u275-b01-1~deb9u1-b01
+2022-03-10T03:37:58,396 INFO [task-runner-0-priority-0] org.apache.druid.indexing.seekablestream.SeekableStreamIndexTaskRunner - Starting with sequences: [SequenceMetadata{sequenceId=0, sequenceName='index_kafka_demo_6cfa3da9bcd17b0_0', assignments=[0], startOffsets={0=596}, exclusiveStartPartitions=[], endOffsets={0=9223372036854775807}, sentinel=false, checkpointed=false}]
+2022-03-10T03:37:58,423 INFO [main] org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2022-03-10T03:37:58,423 INFO [main] org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2022-03-10T03:37:58,424 INFO [main] org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+2022-03-10T03:37:58,463 INFO [task-runner-0-priority-0] org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = none
+	bootstrap.servers = [kafka:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-kafka-supervisor-nddeibjo-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = kafka-supervisor-nddeibjo
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_committed
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 10000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+2022-03-10T03:37:58,525 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Registering com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider as a provider class
+2022-03-10T03:37:58,525 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Registering com.fasterxml.jackson.jaxrs.smile.JacksonSmileProvider as a provider class
+2022-03-10T03:37:58,526 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Registering org.apache.druid.server.initialization.jetty.CustomExceptionMapper as a provider class
+2022-03-10T03:37:58,526 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Registering org.apache.druid.server.initialization.jetty.ForbiddenExceptionMapper as a provider class
+2022-03-10T03:37:58,526 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Registering org.apache.druid.server.initialization.jetty.BadRequestExceptionMapper as a provider class
+2022-03-10T03:37:58,526 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Registering org.apache.druid.server.initialization.jetty.ServiceUnavailableExceptionMapper as a provider class
+2022-03-10T03:37:58,527 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Registering org.apache.druid.server.StatusResource as a root resource class
+2022-03-10T03:37:58,529 INFO [main] com.sun.jersey.server.impl.application.WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.3 10/24/2016 03:43 PM'
+2022-03-10T03:37:58,589 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding org.apache.druid.server.initialization.jetty.CustomExceptionMapper to GuiceManagedComponentProvider with the scope "Singleton"
+2022-03-10T03:37:58,591 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding org.apache.druid.server.initialization.jetty.ForbiddenExceptionMapper to GuiceManagedComponentProvider with the scope "Singleton"
+2022-03-10T03:37:58,592 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding org.apache.druid.server.initialization.jetty.BadRequestExceptionMapper to GuiceManagedComponentProvider with the scope "Singleton"
+2022-03-10T03:37:58,592 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding org.apache.druid.server.initialization.jetty.ServiceUnavailableExceptionMapper to GuiceManagedComponentProvider with the scope "Singleton"
+2022-03-10T03:37:58,593 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider to GuiceManagedComponentProvider with the scope "Singleton"
+2022-03-10T03:37:58,599 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding com.fasterxml.jackson.jaxrs.smile.JacksonSmileProvider to GuiceManagedComponentProvider with the scope "Singleton"
+2022-03-10T03:37:58,617 INFO [task-runner-0-priority-0] org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.8.0
+2022-03-10T03:37:58,617 INFO [task-runner-0-priority-0] org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: ebb1d6e21cc92130
+2022-03-10T03:37:58,617 INFO [task-runner-0-priority-0] org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1646883478615
+2022-03-10T03:37:58,624 INFO [task-runner-0-priority-0] org.apache.druid.curator.discovery.CuratorDruidNodeAnnouncer - Announced self [{"druidNode":{"service":"druid/middleManager","host":"172.22.0.4","bindOnHost":false,"plaintextPort":8100,"port":-1,"tlsPort":-1,"enablePlaintextPort":true,"enableTlsPort":false},"nodeType":"peon","services":{"dataNodeService":{"type":"dataNodeService","tier":"_default_tier","maxSize":0,"type":"indexer-executor","priority":0},"lookupNodeService":{"type":"lookupNodeService","lookupTier":"__default"}}}].
+2022-03-10T03:37:58,679 INFO [task-runner-0-priority-0] org.apache.druid.indexing.seekablestream.SeekableStreamIndexTaskRunner - Initialized sequences: SequenceMetadata{sequenceId=0, sequenceName='index_kafka_demo_6cfa3da9bcd17b0_0', assignments=[0], startOffsets={0=596}, exclusiveStartPartitions=[], endOffsets={0=9223372036854775807}, sentinel=false, checkpointed=false}
+2022-03-10T03:37:58,682 INFO [task-runner-0-priority-0] org.apache.druid.indexing.seekablestream.SeekableStreamIndexTaskRunner - Adding partition[0], start[596] -> end[9223372036854775807] to assignment.
+2022-03-10T03:37:58,686 INFO [task-runner-0-priority-0] org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-kafka-supervisor-nddeibjo-1, groupId=kafka-supervisor-nddeibjo] Subscribed to partition(s): demo-0
+2022-03-10T03:37:58,690 INFO [task-runner-0-priority-0] org.apache.druid.indexing.seekablestream.SeekableStreamIndexTaskRunner - Seeking partition[0] to[596].
+2022-03-10T03:37:58,691 INFO [task-runner-0-priority-0] org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-kafka-supervisor-nddeibjo-1, groupId=kafka-supervisor-nddeibjo] Seeking to offset 596 for partition demo-0
+2022-03-10T03:37:58,987 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding org.apache.druid.server.http.security.StateResourceFilter to GuiceInstantiatedComponentProvider
+2022-03-10T03:37:59,023 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding org.apache.druid.server.http.SegmentListerResource to GuiceInstantiatedComponentProvider
+2022-03-10T03:37:59,039 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding org.apache.druid.server.http.HistoricalResource to GuiceInstantiatedComponentProvider
+2022-03-10T03:37:59,046 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding org.apache.druid.server.QueryResource to GuiceInstantiatedComponentProvider
+2022-03-10T03:37:59,049 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding org.apache.druid.segment.realtime.firehose.ChatHandlerResource to GuiceInstantiatedComponentProvider
+2022-03-10T03:37:59,054 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding org.apache.druid.server.http.security.ConfigResourceFilter to GuiceInstantiatedComponentProvider
+2022-03-10T03:37:59,061 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding org.apache.druid.query.lookup.LookupListeningResource to GuiceInstantiatedComponentProvider
+2022-03-10T03:37:59,064 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding org.apache.druid.query.lookup.LookupIntrospectionResource to GuiceInstantiatedComponentProvider
+2022-03-10T03:37:59,066 INFO [main] com.sun.jersey.guice.spi.container.GuiceComponentProviderFactory - Binding org.apache.druid.server.StatusResource to GuiceManagedComponentProvider with the scope "Undefined"
+2022-03-10T03:37:59,111 INFO [main] org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@280ecc33{/,null,AVAILABLE}
+2022-03-10T03:37:59,133 INFO [main] org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@6181bc4a{HTTP/1.1, (http/1.1)}{0.0.0.0:8100}
+2022-03-10T03:37:59,136 INFO [main] org.eclipse.jetty.server.Server - Started @6305ms
+2022-03-10T03:37:59,136 INFO [main] org.apache.druid.java.util.common.lifecycle.Lifecycle - Starting lifecycle [module] stage [ANNOUNCEMENTS]
+2022-03-10T03:37:59,252 INFO [main] org.apache.druid.java.util.common.lifecycle.Lifecycle - Successfully started lifecycle [module]
+2022-03-10T03:37:59,545 INFO [task-runner-0-priority-0] org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-kafka-supervisor-nddeibjo-1, groupId=kafka-supervisor-nddeibjo] Cluster ID: PCi-NZJ9QEiA00cLpxiPXg
+2022-03-10T03:37:59,970 DEBUG [qtp257684104-119] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/status HTTP/1.1
+2022-03-10T03:38:00,004 DEBUG [qtp257684104-110] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/checkpoints HTTP/1.1
+2022-03-10T03:38:00,019 DEBUG [qtp257684104-112] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/time/start HTTP/1.1
+2022-03-10T03:38:00,087 INFO [task-runner-0-priority-0] org.apache.druid.server.coordination.BatchDataSegmentAnnouncer - Announcing segment[demo_2022-03-10T03:00:00.000Z_2022-03-10T04:00:00.000Z_2022-03-10T03:00:15.486Z_2] at new path[/druid/segments/172.22.0.4:8100/172.22.0.4:8100_indexer-executor__default_tier_2022-03-10T03:38:00.085Z_b87510301fed42d88a35598a7dd8daae0]
+2022-03-10T03:38:00,200 DEBUG [qtp257684104-113] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:38:07,665 DEBUG [qtp257684104-111] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:38:22,585 DEBUG [qtp257684104-115] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:38:24,031 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:38:24,798 DEBUG [qtp257684104-128] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:38:27,793 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:38:28,476 DEBUG [qtp257684104-134] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:38:29,081 DEBUG [qtp257684104-115] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:38:33,564 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:38:33,626 DEBUG [qtp257684104-128] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:38:36,160 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:38:37,682 DEBUG [qtp257684104-115] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:38:38,818 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:38:51,801 DEBUG [qtp257684104-128] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:39:02,777 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T03:39:03,287 DEBUG [qtp257684104-134] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:39:06,116 DEBUG [qtp257684104-115] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:39:07,683 DEBUG [qtp257684104-128] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:39:11,184 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:39:22,144 DEBUG [qtp257684104-134] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:39:28,965 DEBUG [qtp257684104-115] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:39:37,674 DEBUG [qtp257684104-128] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:40:07,667 DEBUG [qtp257684104-134] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:40:12,117 DEBUG [qtp257684104-115] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:40:37,663 DEBUG [qtp257684104-128] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:41:02,702 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T03:41:07,656 DEBUG [qtp257684104-115] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:41:18,118 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:41:37,649 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:42:07,643 DEBUG [qtp257684104-115] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:42:24,120 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:42:37,637 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:43:02,620 DEBUG [qtp257684104-134] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T03:43:07,613 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:43:24,192 DEBUG [qtp257684104-115] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:43:26,765 DEBUG [qtp257684104-134] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:43:30,016 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:43:30,121 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:43:36,693 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:43:37,602 DEBUG [qtp257684104-134] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:43:37,908 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:43:38,840 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:43:39,763 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:43:40,729 DEBUG [qtp257684104-115] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:43:41,734 DEBUG [qtp257684104-134] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:43:42,802 DEBUG [qtp257684104-128] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:43:43,981 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:43:45,176 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:43:46,236 DEBUG [qtp257684104-115] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:43:47,423 DEBUG [qtp257684104-134] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:43:48,714 DEBUG [qtp257684104-128] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:43:57,387 DEBUG [qtp257684104-128] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:44:02,776 DEBUG [qtp257684104-128] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:44:07,596 DEBUG [qtp257684104-115] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:44:36,121 DEBUG [qtp257684104-128] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:44:37,592 DEBUG [qtp257684104-128] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:44:43,471 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:44:44,704 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:44:45,637 DEBUG [qtp257684104-115] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:44:46,625 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:44:47,581 DEBUG [qtp257684104-128] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:44:48,478 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:44:49,360 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:44:50,269 DEBUG [qtp257684104-115] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:44:51,219 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:44:52,083 DEBUG [qtp257684104-128] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:44:52,956 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:44:53,774 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:44:54,853 DEBUG [qtp257684104-115] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:44:55,585 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:44:56,430 DEBUG [qtp257684104-128] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:44:57,223 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:44:58,039 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:44:58,895 DEBUG [qtp257684104-115] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:45:02,544 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T03:45:07,590 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:45:37,591 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:45:42,125 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:46:07,633 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:46:37,637 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:46:48,127 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:47:02,475 DEBUG [qtp257684104-171] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T03:47:07,629 DEBUG [qtp257684104-115] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:47:37,622 DEBUG [qtp257684104-115] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:47:54,125 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:48:05,427 INFO [task-runner-0-priority-0] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Persisted rows[258] and (estimated) bytes[35,604]
+2022-03-10T03:48:05,697 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Flushed in-memory data for segment[demo_2022-03-10T03:00:00.000Z_2022-03-10T04:00:00.000Z_2022-03-10T03:00:15.486Z_2] spill[0] to disk in [270] ms (258 rows).
+2022-03-10T03:48:05,750 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Flushed in-memory data with commit metadata [AppenderatorDriverMetadata{segments={index_kafka_demo_6cfa3da9bcd17b0_0=[SegmentWithState{segmentIdentifier=demo_2022-03-10T03:00:00.000Z_2022-03-10T04:00:00.000Z_2022-03-10T03:00:15.486Z_2, state=APPENDING}]}, lastSegmentIds={index_kafka_demo_6cfa3da9bcd17b0_0=demo_2022-03-10T03:00:00.000Z_2022-03-10T04:00:00.000Z_2022-03-10T03:00:15.486Z_2}, callerMetadata={nextPartitions=SeekableStreamEndSequenceNumbers{stream='demo', partitionSequenceNumberMap={0=853}}}}] for segments: demo_2022-03-10T03:00:00.000Z_2022-03-10T04:00:00.000Z_2022-03-10T03:00:15.486Z_2
+2022-03-10T03:48:05,750 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Persisted stats: processed rows: [261], persisted rows[258], sinks: [1], total fireHydrants (across sinks): [1], persisted fireHydrants (across sinks): [1]
+2022-03-10T03:48:07,616 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:48:31,897 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:48:36,486 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:48:37,567 DEBUG [qtp257684104-116] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:48:37,608 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:48:38,844 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:48:39,860 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:48:40,788 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:48:41,856 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:48:42,926 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:48:43,957 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:48:45,076 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:48:46,089 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:48:46,987 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:48:48,082 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:48:49,181 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:48:50,176 DEBUG [qtp257684104-116] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:48:51,278 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:48:52,196 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:48:53,296 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:48:54,383 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:48:55,500 DEBUG [qtp257684104-116] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:48:56,467 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:49:00,132 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:49:02,407 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T03:49:07,027 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:49:07,627 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:49:37,622 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:50:06,129 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:50:07,617 DEBUG [qtp257684104-116] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:50:24,184 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:50:34,096 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:50:37,610 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:50:45,390 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:50:57,279 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:51:02,345 DEBUG [qtp257684104-116] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T03:51:07,600 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:51:12,130 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:51:18,530 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:51:37,595 DEBUG [qtp257684104-112] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:51:44,669 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:52:07,584 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:52:18,129 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:52:37,574 DEBUG [qtp257684104-112] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:52:45,686 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:52:58,801 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:53:02,278 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T03:53:07,567 DEBUG [qtp257684104-112] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:53:15,647 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:53:24,134 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:53:27,652 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:53:35,477 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:53:37,560 DEBUG [qtp257684104-112] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:53:48,438 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:53:59,861 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:54:06,728 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:54:07,550 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:54:19,460 DEBUG [qtp257684104-112] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:54:26,313 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:54:30,130 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:54:37,541 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:54:39,316 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:54:45,389 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:55:01,312 DEBUG [qtp257684104-112] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:55:02,210 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T03:55:07,534 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:55:11,111 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:55:36,136 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:55:37,528 DEBUG [qtp257684104-112] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:55:41,899 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:56:07,523 DEBUG [qtp257684104-112] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:56:10,286 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:56:37,512 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:56:41,726 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:56:41,777 INFO [class-specialization-0] org.apache.druid.query.monomorphicprocessing.SpecializationService - Specializing prototype class[class org.apache.druid.query.topn.Generic1AggPooledTopNScannerPrototype] for runtime shape[org.apache.druid.query.aggregation.LongSumBufferAggregator {
+  selector: org.apache.druid.segment.data.ColumnarLongs$1HistoricalLongColumnSelector {
+    columnar: org.apache.druid.segment.data.BlockLayoutColumnarLongsSupplier$1,
+    offset: org.apache.druid.segment.SimpleAscendingOffset
+  }
+}] and class remapping[{}]
+2022-03-10T03:56:42,139 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:57:02,142 DEBUG [qtp257684104-112] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T03:57:07,503 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:57:14,072 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:57:37,494 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:57:44,549 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:57:48,134 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:58:07,489 DEBUG [qtp257684104-112] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:58:10,338 INFO [task-runner-0-priority-0] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Persisted rows[456] and (estimated) bytes[62,928]
+2022-03-10T03:58:10,441 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Flushed in-memory data for segment[demo_2022-03-10T03:00:00.000Z_2022-03-10T04:00:00.000Z_2022-03-10T03:00:15.486Z_2] spill[1] to disk in [102] ms (456 rows).
+2022-03-10T03:58:10,453 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Flushed in-memory data with commit metadata [AppenderatorDriverMetadata{segments={index_kafka_demo_6cfa3da9bcd17b0_0=[SegmentWithState{segmentIdentifier=demo_2022-03-10T03:00:00.000Z_2022-03-10T04:00:00.000Z_2022-03-10T03:00:15.486Z_2, state=APPENDING}]}, lastSegmentIds={index_kafka_demo_6cfa3da9bcd17b0_0=demo_2022-03-10T03:00:00.000Z_2022-03-10T04:00:00.000Z_2022-03-10T03:00:15.486Z_2}, callerMetadata={nextPartitions=SeekableStreamEndSequenceNumbers{stream='demo', partitionSequenceNumberMap={0=1309}}}}] for segments: demo_2022-03-10T03:00:00.000Z_2022-03-10T04:00:00.000Z_2022-03-10T03:00:15.486Z_2
+2022-03-10T03:58:10,453 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Persisted stats: processed rows: [717], persisted rows[456], sinks: [1], total fireHydrants (across sinks): [2], persisted fireHydrants (across sinks): [1]
+2022-03-10T03:58:19,221 DEBUG [qtp257684104-112] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:58:37,479 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:58:41,543 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:58:44,104 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:58:45,764 DEBUG [qtp257684104-112] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:58:49,584 DEBUG [qtp257684104-112] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:58:50,753 INFO [class-specialization-0] org.apache.druid.query.monomorphicprocessing.SpecializationService - Specializing prototype class[class org.apache.druid.query.topn.Generic1AggPooledTopNScannerPrototype] for runtime shape[org.apache.druid.query.aggregation.LongSumBufferAggregator {
+  selector: org.apache.druid.segment.LongDimensionIndexer$1IndexerLongColumnSelector
+}] and class remapping[{}]
+2022-03-10T03:58:50,754 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:58:51,973 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:58:54,147 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:59:01,739 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:59:02,073 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T03:59:07,223 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:59:07,469 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:59:20,864 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:59:26,650 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:59:30,889 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:59:37,465 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T03:59:51,660 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T03:59:56,416 DEBUG [qtp257684104-112] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:00:00,137 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:00:03,451 INFO [task-runner-0-priority-0] org.apache.druid.server.coordination.BatchDataSegmentAnnouncer - Announcing segment[demo_2022-03-10T04:00:00.000Z_2022-03-10T05:00:00.000Z_2022-03-10T04:00:03.421Z] at existing path[/druid/segments/172.22.0.4:8100/172.22.0.4:8100_indexer-executor__default_tier_2022-03-10T03:38:00.085Z_b87510301fed42d88a35598a7dd8daae0]
+2022-03-10T04:00:07,454 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:00:24,678 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:00:37,445 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:00:55,842 DEBUG [qtp257684104-112] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:01:02,000 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T04:01:06,139 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:01:07,434 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:01:25,098 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:01:37,427 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:01:50,975 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:02:07,421 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:02:12,141 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:02:20,924 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:02:37,415 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:02:52,182 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:03:01,928 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T04:03:07,409 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:03:18,142 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:03:23,657 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:03:37,406 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:03:54,479 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:04:07,396 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:04:24,145 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:04:29,045 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:04:37,388 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:05:01,748 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:05:01,854 DEBUG [qtp257684104-126] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T04:05:07,381 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:05:30,147 DEBUG [qtp257684104-112] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:05:37,374 DEBUG [qtp257684104-174] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:05:49,307 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:06:07,363 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:06:25,808 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:06:36,150 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:06:37,354 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:06:59,809 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:07:01,786 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T04:07:07,350 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:07:33,452 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:07:37,343 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:07:42,151 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:08:07,335 DEBUG [qtp257684104-174] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:08:11,990 DEBUG [qtp257684104-112] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:08:16,840 INFO [task-runner-0-priority-0] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Persisted rows[428] and (estimated) bytes[59,064]
+2022-03-10T04:08:16,934 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Flushed in-memory data for segment[demo_2022-03-10T03:00:00.000Z_2022-03-10T04:00:00.000Z_2022-03-10T03:00:15.486Z_2] spill[2] to disk in [93] ms (79 rows).
+2022-03-10T04:08:17,026 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Flushed in-memory data for segment[demo_2022-03-10T04:00:00.000Z_2022-03-10T05:00:00.000Z_2022-03-10T04:00:03.421Z] spill[0] to disk in [85] ms (349 rows).
+2022-03-10T04:08:17,044 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Flushed in-memory data with commit metadata [AppenderatorDriverMetadata{segments={index_kafka_demo_6cfa3da9bcd17b0_0=[SegmentWithState{segmentIdentifier=demo_2022-03-10T03:00:00.000Z_2022-03-10T04:00:00.000Z_2022-03-10T03:00:15.486Z_2, state=APPENDING}, SegmentWithState{segmentIdentifier=demo_2022-03-10T04:00:00.000Z_2022-03-10T05:00:00.000Z_2022-03-10T04:00:03.421Z, state=APPENDING}]}, lastSegmentIds={index_kafka_demo_6cfa3da9bcd17b0_0=demo_2022-03-10T04:00:00.000Z_2022-03-10T05:00:00.000Z_2022-03-10T04:00:03.421Z}, callerMetadata={nextPartitions=SeekableStreamEndSequenceNumbers{stream='demo', partitionSequenceNumberMap={0=1737}}}}] for segments: demo_2022-03-10T03:00:00.000Z_2022-03-10T04:00:00.000Z_2022-03-10T03:00:15.486Z_2, demo_2022-03-10T04:00:00.000Z_2022-03-10T05:00:00.000Z_2022-03-10T04:00:03.421Z
+2022-03-10T04:08:17,044 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Persisted stats: processed rows: [1145], persisted rows[428], sinks: [2], total fireHydrants (across sinks): [4], persisted fireHydrants (across sinks): [2]
+2022-03-10T04:08:37,328 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:08:45,965 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:08:48,152 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:09:01,718 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T04:09:07,316 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:09:11,668 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:09:16,600 DEBUG [qtp257684104-174] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:09:37,307 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:09:47,915 DEBUG [qtp257684104-174] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:09:54,152 DEBUG [qtp257684104-118] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:10:07,299 DEBUG [qtp257684104-174] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:10:17,348 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:10:37,291 DEBUG [qtp257684104-174] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:10:54,794 DEBUG [qtp257684104-174] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:11:00,155 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:11:01,644 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T04:11:07,282 DEBUG [qtp257684104-112] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:11:08,001 DEBUG [qtp257684104-174] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:11:22,337 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:11:37,273 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:11:52,870 DEBUG [qtp257684104-112] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:12:06,159 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:12:07,266 DEBUG [qtp257684104-174] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:12:18,127 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:12:37,259 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:12:40,125 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:12:55,349 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:13:01,572 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T04:13:07,254 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:13:12,163 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:13:25,899 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:13:37,248 DEBUG [qtp257684104-112] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:14:01,307 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:14:07,239 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:14:18,159 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:14:30,979 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:14:37,245 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:15:01,500 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T04:15:07,238 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:15:07,742 DEBUG [qtp257684104-174] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:15:24,162 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:15:37,232 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:15:47,051 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:16:07,222 DEBUG [qtp257684104-112] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:16:23,550 DEBUG [qtp257684104-174] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:16:30,163 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:16:37,216 DEBUG [qtp257684104-112] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:16:59,346 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:17:01,426 DEBUG [qtp257684104-174] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T04:17:07,216 DEBUG [qtp257684104-112] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:17:24,452 DEBUG [qtp257684104-174] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:17:36,163 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:17:37,214 DEBUG [qtp257684104-112] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:17:45,645 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:17:54,546 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:18:07,210 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:18:19,370 INFO [task-runner-0-priority-0] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Persisted rows[460] and (estimated) bytes[63,480]
+2022-03-10T04:18:19,471 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Flushed in-memory data for segment[demo_2022-03-10T04:00:00.000Z_2022-03-10T05:00:00.000Z_2022-03-10T04:00:03.421Z] spill[1] to disk in [101] ms (460 rows).
+2022-03-10T04:18:19,483 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Flushed in-memory data with commit metadata [AppenderatorDriverMetadata{segments={index_kafka_demo_6cfa3da9bcd17b0_0=[SegmentWithState{segmentIdentifier=demo_2022-03-10T03:00:00.000Z_2022-03-10T04:00:00.000Z_2022-03-10T03:00:15.486Z_2, state=APPENDING}, SegmentWithState{segmentIdentifier=demo_2022-03-10T04:00:00.000Z_2022-03-10T05:00:00.000Z_2022-03-10T04:00:03.421Z, state=APPENDING}]}, lastSegmentIds={index_kafka_demo_6cfa3da9bcd17b0_0=demo_2022-03-10T04:00:00.000Z_2022-03-10T05:00:00.000Z_2022-03-10T04:00:03.421Z}, callerMetadata={nextPartitions=SeekableStreamEndSequenceNumbers{stream='demo', partitionSequenceNumberMap={0=2197}}}}] for segments: demo_2022-03-10T04:00:00.000Z_2022-03-10T05:00:00.000Z_2022-03-10T04:00:03.421Z
+2022-03-10T04:18:19,483 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Persisted stats: processed rows: [1605], persisted rows[460], sinks: [2], total fireHydrants (across sinks): [5], persisted fireHydrants (across sinks): [1]
+2022-03-10T04:18:27,228 DEBUG [qtp257684104-174] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:18:37,201 DEBUG [qtp257684104-174] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:18:42,165 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:18:55,086 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:19:01,354 DEBUG [qtp257684104-112] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T04:19:07,192 DEBUG [qtp257684104-124] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:19:25,500 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:19:37,184 DEBUG [qtp257684104-124] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:19:48,166 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:19:53,915 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:20:02,615 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:20:07,177 DEBUG [qtp257684104-124] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:20:29,292 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:20:37,166 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:20:54,168 DEBUG [qtp257684104-174] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:20:55,765 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:20:59,817 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:21:01,285 DEBUG [qtp257684104-124] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T04:21:07,155 DEBUG [qtp257684104-174] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:21:23,616 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:21:29,415 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:21:37,149 DEBUG [qtp257684104-174] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:21:52,795 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:22:00,169 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:22:07,139 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:22:28,113 DEBUG [qtp257684104-174] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:22:37,128 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:22:40,532 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:22:58,222 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:23:01,211 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T04:23:06,171 DEBUG [qtp257684104-124] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:23:07,118 DEBUG [qtp257684104-174] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:23:07,883 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:23:13,546 DEBUG [qtp257684104-124] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:23:37,110 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:23:41,488 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:24:07,101 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:24:12,172 DEBUG [qtp257684104-174] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:24:37,089 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:24:56,944 DEBUG [qtp257684104-124] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:24:57,105 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:25:01,141 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T04:25:04,546 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:25:07,080 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:25:18,175 DEBUG [qtp257684104-169] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:25:32,297 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:25:37,069 DEBUG [qtp257684104-174] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:25:37,157 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:26:04,473 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:26:07,063 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:26:13,021 DEBUG [qtp257684104-117] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:26:20,629 DEBUG [qtp257684104-174] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:26:24,175 DEBUG [qtp257684104-124] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:26:37,054 DEBUG [qtp257684104-124] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:27:01,073 DEBUG [qtp257684104-117] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T04:27:07,046 DEBUG [qtp257684104-119] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:27:09,660 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:27:30,175 DEBUG [qtp257684104-124] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:27:37,038 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:27:38,989 DEBUG [qtp257684104-119] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:27:41,034 DEBUG [qtp257684104-124] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:27:46,054 DEBUG [qtp257684104-119] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:27:57,674 DEBUG [qtp257684104-117] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:27:57,736 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:28:03,016 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:28:07,029 DEBUG [qtp257684104-119] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:28:19,328 DEBUG [qtp257684104-119] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:28:24,825 INFO [task-runner-0-priority-0] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Persisted rows[444] and (estimated) bytes[61,272]
+2022-03-10T04:28:24,927 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Flushed in-memory data for segment[demo_2022-03-10T04:00:00.000Z_2022-03-10T05:00:00.000Z_2022-03-10T04:00:03.421Z] spill[2] to disk in [102] ms (444 rows).
+2022-03-10T04:28:24,939 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Flushed in-memory data with commit metadata [AppenderatorDriverMetadata{segments={index_kafka_demo_6cfa3da9bcd17b0_0=[SegmentWithState{segmentIdentifier=demo_2022-03-10T03:00:00.000Z_2022-03-10T04:00:00.000Z_2022-03-10T03:00:15.486Z_2, state=APPENDING}, SegmentWithState{segmentIdentifier=demo_2022-03-10T04:00:00.000Z_2022-03-10T05:00:00.000Z_2022-03-10T04:00:03.421Z, state=APPENDING}]}, lastSegmentIds={index_kafka_demo_6cfa3da9bcd17b0_0=demo_2022-03-10T04:00:00.000Z_2022-03-10T05:00:00.000Z_2022-03-10T04:00:03.421Z}, callerMetadata={nextPartitions=SeekableStreamEndSequenceNumbers{stream='demo', partitionSequenceNumberMap={0=2641}}}}] for segments: demo_2022-03-10T04:00:00.000Z_2022-03-10T05:00:00.000Z_2022-03-10T04:00:03.421Z
+2022-03-10T04:28:24,939 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Persisted stats: processed rows: [2049], persisted rows[444], sinks: [2], total fireHydrants (across sinks): [6], persisted fireHydrants (across sinks): [1]
+2022-03-10T04:28:31,165 DEBUG [qtp257684104-117] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:28:36,177 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:28:37,020 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:28:41,207 DEBUG [qtp257684104-119] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:29:01,001 DEBUG [qtp257684104-117] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T04:29:07,010 DEBUG [qtp257684104-119] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:29:13,345 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:29:16,771 DEBUG [qtp257684104-117] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:29:37,002 DEBUG [qtp257684104-124] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:29:42,179 DEBUG [qtp257684104-117] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:29:42,474 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:29:50,470 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:30:06,992 DEBUG [qtp257684104-119] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:30:08,044 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:30:16,987 DEBUG [qtp257684104-117] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:30:36,984 DEBUG [qtp257684104-124] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:30:40,943 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:30:40,944 DEBUG [qtp257684104-119] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:30:47,913 DEBUG [qtp257684104-117] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:30:48,190 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:30:49,284 DEBUG [qtp257684104-124] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:30:57,257 DEBUG [qtp257684104-138] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:31:00,928 DEBUG [qtp257684104-119] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T04:31:06,973 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:31:12,987 DEBUG [qtp257684104-117] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:31:13,583 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:31:22,658 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:31:36,965 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:31:48,896 DEBUG [qtp257684104-124] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:31:54,182 DEBUG [qtp257684104-119] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:32:06,961 DEBUG [qtp257684104-124] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:32:34,883 DEBUG [qtp257684104-124] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:32:36,954 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:32:45,039 DEBUG [qtp257684104-124] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:32:55,728 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:33:00,188 DEBUG [qtp257684104-163] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:33:00,854 DEBUG [qtp257684104-124] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T04:33:06,948 DEBUG [qtp257684104-117] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:33:36,941 DEBUG [qtp257684104-172] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:34:06,183 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:34:06,938 DEBUG [qtp257684104-172] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:34:36,930 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:34:42,679 DEBUG [qtp257684104-117] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:34:55,265 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:34:56,473 DEBUG [qtp257684104-172] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:35:00,787 DEBUG [qtp257684104-117] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T04:35:06,921 DEBUG [qtp257684104-117] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:35:12,186 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:35:13,645 DEBUG [qtp257684104-172] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:35:15,827 DEBUG [qtp257684104-158] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:35:36,914 DEBUG [qtp257684104-117] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:36:03,646 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:36:03,839 DEBUG [qtp257684104-117] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:36:06,906 DEBUG [qtp257684104-117] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:36:16,936 DEBUG [qtp257684104-150] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:36:16,940 DEBUG [qtp257684104-117] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:36:18,190 DEBUG [qtp257684104-163] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:36:20,127 DEBUG [qtp257684104-172] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:36:36,897 DEBUG [qtp257684104-143] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:36:42,158 DEBUG [qtp257684104-172] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:36:56,183 DEBUG [qtp257684104-163] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:36:58,762 DEBUG [qtp257684104-117] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:37:00,711 DEBUG [qtp257684104-172] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T04:37:06,887 DEBUG [qtp257684104-143] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:37:14,495 DEBUG [qtp257684104-117] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:37:14,496 DEBUG [qtp257684104-172] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:37:22,392 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:37:22,396 DEBUG [qtp257684104-163] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:37:24,188 DEBUG [qtp257684104-143] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:37:36,877 DEBUG [qtp257684104-172] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:37:57,980 DEBUG [qtp257684104-150] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:37:57,983 DEBUG [qtp257684104-172] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:37:59,811 DEBUG [qtp257684104-163] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:37:59,813 DEBUG [qtp257684104-143] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:38:02,892 DEBUG [qtp257684104-143] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:38:02,894 DEBUG [qtp257684104-154] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:38:03,642 DEBUG [qtp257684104-150] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:38:03,647 DEBUG [qtp257684104-172] org.apache.druid.jetty.RequestLog - 172.22.0.7 POST //172.22.0.4:8100/druid/v2/ HTTP/1.1
+2022-03-10T04:38:06,869 DEBUG [qtp257684104-163] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:38:20,128 DEBUG [qtp257684104-143] org.apache.druid.jetty.RequestLog - 172.22.0.6 POST //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/pause HTTP/1.1
+2022-03-10T04:38:20,143 INFO [qtp257684104-117] org.apache.druid.indexing.seekablestream.SeekableStreamIndexTaskRunner - Sequence[index_kafka_demo_6cfa3da9bcd17b0_0] end offsets updated from [{0=9223372036854775807}] to [{0=3081}].
+2022-03-10T04:38:20,153 INFO [qtp257684104-117] org.apache.druid.indexing.seekablestream.SeekableStreamIndexTaskRunner - Saved sequence metadata to disk: [SequenceMetadata{sequenceId=0, sequenceName='index_kafka_demo_6cfa3da9bcd17b0_0', assignments=[0], startOffsets={0=596}, exclusiveStartPartitions=[], endOffsets={0=3081}, sentinel=false, checkpointed=true}]
+2022-03-10T04:38:20,154 INFO [task-runner-0-priority-0] org.apache.druid.indexing.seekablestream.SeekableStreamIndexTaskRunner - Finished reading partition[0], up to[3081].
+2022-03-10T04:38:20,154 DEBUG [qtp257684104-117] org.apache.druid.jetty.RequestLog - 172.22.0.6 POST //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/end?finish=true HTTP/1.1
+2022-03-10T04:38:20,155 INFO [task-runner-0-priority-0] org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-kafka-supervisor-nddeibjo-1, groupId=kafka-supervisor-nddeibjo] Unsubscribed all topics or patterns and assigned partitions
+2022-03-10T04:38:20,157 INFO [task-runner-0-priority-0] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Persisted rows[439] and (estimated) bytes[60,582]
+2022-03-10T04:38:20,300 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Flushed in-memory data for segment[demo_2022-03-10T04:00:00.000Z_2022-03-10T05:00:00.000Z_2022-03-10T04:00:03.421Z] spill[3] to disk in [142] ms (439 rows).
+2022-03-10T04:38:20,317 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Flushed in-memory data with commit metadata [AppenderatorDriverMetadata{segments={index_kafka_demo_6cfa3da9bcd17b0_0=[SegmentWithState{segmentIdentifier=demo_2022-03-10T03:00:00.000Z_2022-03-10T04:00:00.000Z_2022-03-10T03:00:15.486Z_2, state=APPENDING}, SegmentWithState{segmentIdentifier=demo_2022-03-10T04:00:00.000Z_2022-03-10T05:00:00.000Z_2022-03-10T04:00:03.421Z, state=APPENDING}]}, lastSegmentIds={index_kafka_demo_6cfa3da9bcd17b0_0=demo_2022-03-10T04:00:00.000Z_2022-03-10T05:00:00.000Z_2022-03-10T04:00:03.421Z}, callerMetadata={nextPartitions=SeekableStreamEndSequenceNumbers{stream='demo', partitionSequenceNumberMap={0=3081}}}}] for segments: demo_2022-03-10T04:00:00.000Z_2022-03-10T05:00:00.000Z_2022-03-10T04:00:03.421Z
+2022-03-10T04:38:20,318 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Persisted stats: processed rows: [2485], persisted rows[439], sinks: [2], total fireHydrants (across sinks): [7], persisted fireHydrants (across sinks): [1]
+2022-03-10T04:38:20,323 INFO [task-runner-0-priority-0] org.apache.druid.segment.realtime.appenderator.BaseAppenderatorDriver - Pushing [2] segments in background
+2022-03-10T04:38:20,325 INFO [task-runner-0-priority-0] org.apache.druid.segment.realtime.appenderator.BaseAppenderatorDriver - Pushing segments: [demo_2022-03-10T03:00:00.000Z_2022-03-10T04:00:00.000Z_2022-03-10T03:00:15.486Z_2, demo_2022-03-10T04:00:00.000Z_2022-03-10T05:00:00.000Z_2022-03-10T04:00:03.421Z]
+2022-03-10T04:38:20,326 INFO [task-runner-0-priority-0] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Persisted rows[0] and (estimated) bytes[0]
+2022-03-10T04:38:20,339 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Flushed in-memory data with commit metadata [AppenderatorDriverMetadata{segments={index_kafka_demo_6cfa3da9bcd17b0_0=[SegmentWithState{segmentIdentifier=demo_2022-03-10T03:00:00.000Z_2022-03-10T04:00:00.000Z_2022-03-10T03:00:15.486Z_2, state=APPENDING}, SegmentWithState{segmentIdentifier=demo_2022-03-10T04:00:00.000Z_2022-03-10T05:00:00.000Z_2022-03-10T04:00:03.421Z, state=APPENDING}]}, lastSegmentIds={index_kafka_demo_6cfa3da9bcd17b0_0=demo_2022-03-10T04:00:00.000Z_2022-03-10T05:00:00.000Z_2022-03-10T04:00:03.421Z}, callerMetadata={nextPartitions=SeekableStreamStartSequenceNumbers{stream='demo', partitionSequenceNumberMap={0=3081}, exclusivePartitions=[]}, publishPartitions=SeekableStreamEndSequenceNumbers{stream='demo', partitionSequenceNumberMap={0=3081}}}}] for segments: 
+2022-03-10T04:38:20,340 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Persisted stats: processed rows: [2485], persisted rows[0], sinks: [2], total fireHydrants (across sinks): [7], persisted fireHydrants (across sinks): [0]
+2022-03-10T04:38:20,340 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-appenderator-merge] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Preparing to push (stats): processed rows: [2485], sinks: [2], fireHydrants (across sinks): [7]
+2022-03-10T04:38:20,740 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-appenderator-merge] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Segment[demo_2022-03-10T03:00:00.000Z_2022-03-10T04:00:00.000Z_2022-03-10T03:00:15.486Z_2] of 6,035 bytes built from 3 incremental persist(s) in 129ms; pushed to deep storage in 259ms. Load spec is: {"type":"local","path":"/opt/shared/segments/demo/2022-03-10T03:00:00.000Z_2022-03-10T04:00:00.000Z/2022-03-10T03:00:15.486Z/2/6e6fede0-564d-436f-ac32-8928b85daa56/index.zip"}
+2022-03-10T04:38:21,126 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-appenderator-merge] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Segment[demo_2022-03-10T04:00:00.000Z_2022-03-10T05:00:00.000Z_2022-03-10T04:00:03.421Z] of 11,285 bytes built from 4 incremental persist(s) in 109ms; pushed to deep storage in 268ms. Load spec is: {"type":"local","path":"/opt/shared/segments/demo/2022-03-10T04:00:00.000Z_2022-03-10T05:00:00.000Z/2022-03-10T04:00:03.421Z/0/4ee88a7c-0cc0-4183-ac72-314e45c8fa7f/index.zip"}
+2022-03-10T04:38:21,126 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-appenderator-merge] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Push complete...
+2022-03-10T04:38:21,185 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-publish] org.apache.druid.segment.realtime.appenderator.BaseAppenderatorDriver - Published [2] segments with commit metadata [{nextPartitions=SeekableStreamStartSequenceNumbers{stream='demo', partitionSequenceNumberMap={0=3081}, exclusivePartitions=[]}, publishPartitions=SeekableStreamEndSequenceNumbers{stream='demo', partitionSequenceNumberMap={0=3081}}}]
+2022-03-10T04:38:21,187 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-publish] org.apache.druid.segment.realtime.appenderator.BaseAppenderatorDriver - Published segments: [demo_2022-03-10T03:00:00.000Z_2022-03-10T04:00:00.000Z_2022-03-10T03:00:15.486Z_2, demo_2022-03-10T04:00:00.000Z_2022-03-10T05:00:00.000Z_2022-03-10T04:00:03.421Z]
+2022-03-10T04:38:21,188 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-publish] org.apache.druid.indexing.seekablestream.SeekableStreamIndexTaskRunner - Published 2 segments for sequence [index_kafka_demo_6cfa3da9bcd17b0_0] with metadata [AppenderatorDriverMetadata{segments={index_kafka_demo_6cfa3da9bcd17b0_0=[SegmentWithState{segmentIdentifier=demo_2022-03-10T03:00:00.000Z_2022-03-10T04:00:00.000Z_2022-03-10T03:00:15.486Z_2, state=APPENDING}, SegmentWithState{segmentIdentifier=demo_2022-03-10T04:00:00.000Z_2022-03-10T05:00:00.000Z_2022-03-10T04:00:03.421Z, state=APPENDING}]}, lastSegmentIds={index_kafka_demo_6cfa3da9bcd17b0_0=demo_2022-03-10T04:00:00.000Z_2022-03-10T05:00:00.000Z_2022-03-10T04:00:03.421Z}, callerMetadata={nextPartitions=SeekableStreamStartSequenceNumbers{stream='demo', partitionSequenceNumberMap={0=3081}, exclusivePartitions=[]}, publishPartitions=SeekableStreamEndSequenceNumbers{stream='demo', partitionSequenceNumberMap={0=3081}}}}].
+2022-03-10T04:38:21,188 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-publish] org.apache.druid.indexing.seekablestream.SeekableStreamIndexTaskRunner - Published segments: [demo_2022-03-10T03:00:00.000Z_2022-03-10T04:00:00.000Z_2022-03-10T03:00:15.486Z_2, demo_2022-03-10T04:00:00.000Z_2022-03-10T05:00:00.000Z_2022-03-10T04:00:03.421Z]
+2022-03-10T04:38:21,193 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-publish] org.apache.druid.indexing.seekablestream.SeekableStreamIndexTaskRunner - Saved sequence metadata to disk: []
+2022-03-10T04:38:36,885 DEBUG [qtp257684104-142] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:38:56,096 INFO [coordinator_handoff_scheduled_0] org.apache.druid.segment.handoff.CoordinatorBasedSegmentHandoffNotifier - Still waiting for Handoff for [2] Segments
+2022-03-10T04:39:00,650 DEBUG [qtp257684104-149] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/listen/v1/lookups HTTP/1.1
+2022-03-10T04:39:06,881 DEBUG [qtp257684104-140] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:39:36,878 DEBUG [qtp257684104-142] org.apache.druid.jetty.RequestLog - 172.22.0.6 GET //172.22.0.4:8100/druid/worker/v1/chat/index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo/offsets/current HTTP/1.1
+2022-03-10T04:39:56,055 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-appenderator-persist] org.apache.druid.server.coordination.BatchDataSegmentAnnouncer - Unannouncing segment[demo_2022-03-10T04:00:00.000Z_2022-03-10T05:00:00.000Z_2022-03-10T04:00:03.421Z] at path[/druid/segments/172.22.0.4:8100/172.22.0.4:8100_indexer-executor__default_tier_2022-03-10T03:38:00.085Z_b87510301fed42d88a35598a7dd8daae0]
+2022-03-10T04:39:56,184 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Dropped segment[demo_2022-03-10T04:00:00.000Z_2022-03-10T05:00:00.000Z_2022-03-10T04:00:03.421Z].
+2022-03-10T04:39:56,188 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-appenderator-persist] org.apache.druid.server.coordination.BatchDataSegmentAnnouncer - Unannouncing segment[demo_2022-03-10T03:00:00.000Z_2022-03-10T04:00:00.000Z_2022-03-10T03:00:15.486Z_2] at path[/druid/segments/172.22.0.4:8100/172.22.0.4:8100_indexer-executor__default_tier_2022-03-10T03:38:00.085Z_b87510301fed42d88a35598a7dd8daae0]
+2022-03-10T04:39:56,189 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-appenderator-persist] org.apache.druid.curator.announcement.Announcer - Unannouncing [/druid/segments/172.22.0.4:8100/172.22.0.4:8100_indexer-executor__default_tier_2022-03-10T03:38:00.085Z_b87510301fed42d88a35598a7dd8daae0]
+2022-03-10T04:39:56,278 INFO [[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo]-appenderator-persist] org.apache.druid.segment.realtime.appenderator.StreamAppenderator - Dropped segment[demo_2022-03-10T03:00:00.000Z_2022-03-10T04:00:00.000Z_2022-03-10T03:00:15.486Z_2].
+2022-03-10T04:39:56,282 INFO [task-runner-0-priority-0] org.apache.druid.indexing.seekablestream.SeekableStreamIndexTaskRunner - Handoff complete for segments: DataSegment{binaryVersion=9, id=demo_2022-03-10T03:00:00.000Z_2022-03-10T04:00:00.000Z_2022-03-10T03:00:15.486Z_2, loadSpec={type=>local, path=>/opt/shared/segments/demo/2022-03-10T03:00:00.000Z_2022-03-10T04:00:00.000Z/2022-03-10T03:00:15.486Z/2/6e6fede0-564d-436f-ac32-8928b85daa56/index.zip}, dimensions=[data_id, name], metrics=[], shardSpec=NumberedShardSpec{partitionNum=2, partitions=0}, lastCompactionState=null, size=6035}, DataSegment{binaryVersion=9, id=demo_2022-03-10T04:00:00.000Z_2022-03-10T05:00:00.000Z_2022-03-10T04:00:03.421Z, loadSpec={type=>local, path=>/opt/shared/segments/demo/2022-03-10T04:00:00.000Z_2022-03-10T05:00:00.000Z/2022-03-10T04:00:03.421Z/0/4ee88a7c-0cc0-4183-ac72-314e45c8fa7f/index.zip}, dimensions=[data_id, name], metrics=[], shardSpec=NumberedShardSpec{partitionNum=0, partitions=0}, lastCompactionState=null, size=11285}
+2022-03-10T04:39:56,283 INFO [task-runner-0-priority-0] org.apache.kafka.common.metrics.Metrics - Metrics scheduler closed
+2022-03-10T04:39:56,284 INFO [task-runner-0-priority-0] org.apache.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-03-10T04:39:56,284 INFO [task-runner-0-priority-0] org.apache.kafka.common.metrics.Metrics - Metrics reporters closed
+2022-03-10T04:39:56,289 INFO [task-runner-0-priority-0] org.apache.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-kafka-supervisor-nddeibjo-1 unregistered
+2022-03-10T04:39:56,289 INFO [task-runner-0-priority-0] org.apache.druid.curator.announcement.Announcer - Unannouncing [/druid/internal-discovery/PEON/172.22.0.4:8100]
+2022-03-10T04:39:56,291 INFO [task-runner-0-priority-0] org.apache.druid.curator.discovery.CuratorDruidNodeAnnouncer - Unannounced self [{"druidNode":{"service":"druid/middleManager","host":"172.22.0.4","bindOnHost":false,"plaintextPort":8100,"port":-1,"tlsPort":-1,"enablePlaintextPort":true,"enableTlsPort":false},"nodeType":"peon","services":{"dataNodeService":{"type":"dataNodeService","tier":"_default_tier","maxSize":0,"type":"indexer-executor","priority":0},"lookupNodeService":{"type":"lookupNodeService","lookupTier":"__default"}}}].
+2022-03-10T04:39:56,292 INFO [task-runner-0-priority-0] org.apache.druid.curator.announcement.Announcer - Unannouncing [/druid/announcements/172.22.0.4:8100]
+2022-03-10T04:39:56,305 INFO [task-runner-0-priority-0] org.apache.druid.indexing.worker.executor.ExecutorLifecycle - Task completed with status: {
+  "id" : "index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo",
+  "status" : "SUCCESS",
+  "duration" : 3717993,
+  "errorMsg" : null,
+  "location" : {
+    "host" : null,
+    "port" : -1,
+    "tlsPort" : -1
+  }
+}
+2022-03-10T04:39:56,313 INFO [main] org.apache.druid.java.util.common.lifecycle.Lifecycle - Stopping lifecycle [module] stage [ANNOUNCEMENTS]
+2022-03-10T04:39:56,317 INFO [main] org.apache.druid.java.util.common.lifecycle.Lifecycle - Stopping lifecycle [module] stage [SERVER]
+2022-03-10T04:39:56,304 INFO [main] org.eclipse.jetty.server.AbstractConnector - Stopped ServerConnector@6181bc4a{HTTP/1.1, (http/1.1)}{0.0.0.0:8100}
+2022-03-10T04:39:56,304 INFO [main] org.eclipse.jetty.server.session - node0 Stopped scavenging
+2022-03-10T04:39:56,307 INFO [main] org.eclipse.jetty.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@280ecc33{/,null,STOPPED}
+2022-03-10T04:39:56,314 INFO [main] org.apache.druid.java.util.common.lifecycle.Lifecycle - Stopping lifecycle [module] stage [NORMAL]
+2022-03-10T04:39:56,314 INFO [main] org.apache.druid.server.coordination.ZkCoordinator - Stopping ZkCoordinator for [DruidServerMetadata{name='172.22.0.4:8100', hostAndPort='172.22.0.4:8100', hostAndTlsPort='null', maxSize=0, tier='_default_tier', type=indexer-executor, priority=0}]
+2022-03-10T04:39:56,314 INFO [main] org.apache.druid.server.coordination.SegmentLoadDropHandler - Stopping...
+2022-03-10T04:39:56,314 INFO [main] org.apache.druid.server.coordination.SegmentLoadDropHandler - Stopped.
+2022-03-10T04:39:56,315 INFO [main] org.apache.druid.indexing.overlord.SingleTaskBackgroundRunner - Starting graceful shutdown of task[index_kafka_demo_6cfa3da9bcd17b0_iipjjmbo].
+2022-03-10T04:39:56,316 INFO [main] org.apache.druid.indexing.seekablestream.SeekableStreamIndexTaskRunner - Stopping forcefully (status: [PUBLISHING])
+2022-03-10T04:39:56,353 INFO [LookupExtractorFactoryContainerProvider-MainThread] org.apache.druid.query.lookup.LookupReferencesManager - Lookup Management loop exited. Lookup notices are not handled anymore.
+2022-03-10T04:39:56,357 INFO [Curator-Framework-0] org.apache.curator.framework.imps.CuratorFrameworkImpl - backgroundOperationsLoop exiting
+2022-03-10T04:39:56,466 INFO [main] org.apache.zookeeper.ZooKeeper - Session: 0x10000248b16000a closed
+2022-03-10T04:39:56,466 INFO [main-EventThread] org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x10000248b16000a
+2022-03-10T04:39:56,503 INFO [main] org.apache.druid.java.util.common.lifecycle.Lifecycle - Stopping lifecycle [module] stage [INIT]
+Finished peon task

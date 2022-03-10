@@ -1,0 +1,23 @@
+[2022-03-09 07:46:33,660] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: Demo.producer manual__2022-03-09T07:46:30.747520+00:00 [queued]>
+[2022-03-09 07:46:33,691] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: Demo.producer manual__2022-03-09T07:46:30.747520+00:00 [queued]>
+[2022-03-09 07:46:33,693] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-09 07:46:33,694] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-09 07:46:33,695] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-09 07:46:33,772] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): producer> on 2022-03-09 07:46:30.747520+00:00
+[2022-03-09 07:46:33,776] {standard_task_runner.py:52} INFO - Started process 55 to run task
+[2022-03-09 07:46:33,781] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'Demo', 'producer', 'manual__2022-03-09T07:46:30.747520+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/demo.py', '--cfg-path', '/tmp/tmpnhaopdwf', '--error-file', '/tmp/tmphgngw79k']
+[2022-03-09 07:46:33,783] {standard_task_runner.py:77} INFO - Job 3: Subtask producer
+[2022-03-09 07:46:33,947] {logging_mixin.py:109} INFO - Running <TaskInstance: Demo.producer manual__2022-03-09T07:46:30.747520+00:00 [running]> on host 0ec2608998bc
+[2022-03-09 07:46:34,092] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Demo
+AIRFLOW_CTX_TASK_ID=producer
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-09T07:46:30.747520+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-03-09T07:46:30.747520+00:00
+[2022-03-09 07:46:34,094] {logging_mixin.py:109} INFO - This is a function that will run within the DAG execution
+[2022-03-09 07:46:34,095] {python.py:175} INFO - Done. Returned value was: None
+[2022-03-09 07:46:34,109] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=Demo, task_id=producer, execution_date=20220309T074630, start_date=20220309T074633, end_date=20220309T074634
+[2022-03-09 07:46:34,197] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-09 07:46:34,230] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
