@@ -4,7 +4,7 @@
 [![Druid](https://img.shields.io/badge/druid-0.22.1-orange)](https://druid.apache.org/docs/latest/design/)
 [![Redis](https://img.shields.io/badge/redis-6.2.6-orange)](https://redis.io/)
 [![Posgresql](https://img.shields.io/badge/postgres-14.1-brown)](https://www.postgresql.org/)
-[![Superset](https://img.shields.io/badge/Superset-0.63-lightgrey)](https://superset.apache.org/docs/intro/)
+[![Superset](https://img.shields.io/badge/Superset-1.4.1-lightgrey)](https://superset.apache.org/docs/intro/)
 
 In today's world you want to learn from your customers as quickly as possible. This blog gives an introduction to setting up streaming analytics using open source technologies. We'll use Apache {Kafka, Superset, Druid, Airflow} to set up a system that allows you to get a deeper understanding of the behaviour of your customers.
 
