@@ -63,7 +63,7 @@ services:
   #   command:
   #     - coordinator
   #   env_file:
-  #     - ./environment.env
+  #     - ./a-druid/environment.env
 
   # # Druid Broker
   # broker:
@@ -76,7 +76,7 @@ services:
   #   command:
   #     - broker
   #   env_file:
-  #      - ./environment.env
+  #      - ./a-druid/environment.env
 
   # # Druid Historical
   # historical:
@@ -90,7 +90,7 @@ services:
   #   command:
   #     - historical
   #   env_file:
-  #     - ./environment.env
+  #     - ./a-druid/environment.env
 
   # # Druid middlemanager
   # middlemanager:
@@ -105,7 +105,7 @@ services:
   #   command:
   #     - middleManager
   #   env_file:
-  #     - ./environment.env
+  #     - ./a-druid/environment.env
   
   # # Druid router
   # router:
@@ -118,7 +118,7 @@ services:
   #   command:
   #     - router
   #   env_file:
-  #     - ./environment.env
+  #     - ./a-druid/environment.env
 
   # # Superset Demo need change to superset product
   # superset:

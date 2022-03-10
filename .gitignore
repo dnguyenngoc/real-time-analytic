@@ -1,5 +1,5 @@
 __pycache__
-logs/**
+logs/
 pgadmin
 a-db
 broker_var
