@@ -14,7 +14,7 @@ In today's world you want to learn from your customers as quickly as possible. T
 
 <div>
     <kbd>
-        <img title="View System" src="https://github.com/apot-group/document-processing/blob/main/o-statics/images/server.png?raw=true" />
+        <img title="View System" src="https://github.com/apot-group/real-time-analytic/blob/main/public/chart.png?raw=true" />
     </kbd>
     <br/>
 </div>
@@ -41,13 +41,15 @@ In today's world you want to learn from your customers as quickly as possible. T
 ### 3. Start Server
 `cd real-time-analytic && docker-compose up`
 
+| Service               | URL                              | User/Password                                 |
+| :-------------------: | :------------------------------: | :-------------------------------------------: |
+| Druid Unified Console | http://localhost:8888/           | None                                          |
+| Druid Legacy Console  | http://localhost:8081/           | None                                          |
+| Superset              | http://localhost:8088/           | docker exec -it superset bash superset-init   |
+| Airflow               | http://localhost:3000/           | a-airflow/app/standalone_admin_password.txt   |
 
-| Service               | URL                              |
-| :-------------------: | :------------------------------: |
-| Druid Unified Console | http://localhost:8888/           |
-| Druid Legacy Console  | http://localhost:8081/           |
-| Superset              | http://localhost:8088/           |
-| Airflow               | http://localhost:3000/           |
+### 3. Create Dashboard sample from druid streaming
+will update soon. !!!
 
 
 ## Contact Us

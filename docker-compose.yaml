@@ -4,7 +4,7 @@ services:
   # Redis
   redis:
     image: redis
-    restart: always
+    restart: unless-stopped
     volumes:
       - ./a-redis:/data
 
@@ -15,25 +15,27 @@ services:
     restart: unless-stopped
     volumes:
       - ./a-db/data/:/var/lib/postgresql/data
+      - ./a-db/init.sql:/docker-entrypoint-initdb.d/run_init.sql
     ports:
       - 5432:5432
     environment:
       - POSTGRES_PASSWORD=FoolishPassword
       - POSTGRES_USER=druid
       - POSTGRES_DB=druid
-    
-  # pgadmin:
-  #   container_name: pgadmin_container
-  #   image: dpage/pgadmin4
-  #   restart: unless-stopped
-  #   environment:
-  #     PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pot@gmail.com}
-  #     PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
-  #     PGADMIN_CONFIG_SERVER_MODE: 'False'
-  #   volumes:
-  #     - ./pgadmin:/var/lib/pgadmin
-  #   ports:
-  #     - "5050:80"
+  
+  # Pgadmin
+  pgadmin:
+    container_name: pgadmin_container
+    image: dpage/pgadmin4
+    restart: unless-stopped
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pot@gmail.com}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    volumes:
+      - ./pgadmin:/var/lib/pgadmin
+    ports:
+      - "5050:80"
 
  # zookeeper Need 3.5 or later for container nodes
   zookeeper:

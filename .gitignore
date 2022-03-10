@@ -11,6 +11,7 @@ a-druid/router_var/*
 a-airflow/app/logs/*
 a-db/data/*
 a-redis/*
+a-airflow/app/temp_test/*
 
 
 !a-druid/broker_var/.gitkeep 
@@ -20,6 +21,5 @@ a-redis/*
 !a-druid/middle_var/.gitkeep 
 !a-druid/router_var/.gitkeep 
 !a-airflow/app/logs/.gitkeep
-!a-db/data/.gitkeep
 !a-redis/.gitkeep
 
