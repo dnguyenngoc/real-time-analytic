@@ -1,28 +1,12 @@
 version: '3.8'
 services:
 
-#  # Need 3.5 or later for container nodes
-#   zookeeper:
-#     container_name: zookeeper
-#     image: zookeeper:3.5
-#     ports:
-#       - "2181:2181"
-#     environment:
-#       - ZOO_MY_ID=1
-
-#   kafka: # Kafka
-#     image: confluentinc/cp-kafka:5.2.0
-#     hostname: kafka
-#     container_name: kafka
-#     restart: always
-#     ports:
-#       - '9092:9092'
-#     environment:
-#       KAFKA_BROKER_ID: 1
-#       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-#       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
-#       KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
-#       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+  # Redis
+  redis:
+    image: redis
+    restart: always
+    volumes:
+      - ./a-redis:/data
 
   # Database
   postgres:
@@ -38,99 +22,130 @@ services:
       - POSTGRES_USER=druid
       - POSTGRES_DB=druid
     
-  pgadmin:
-    container_name: pgadmin_container
-    image: dpage/pgadmin4
+  # pgadmin:
+  #   container_name: pgadmin_container
+  #   image: dpage/pgadmin4
+  #   restart: unless-stopped
+  #   environment:
+  #     PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pot@gmail.com}
+  #     PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
+  #     PGADMIN_CONFIG_SERVER_MODE: 'False'
+  #   volumes:
+  #     - ./pgadmin:/var/lib/pgadmin
+  #   ports:
+  #     - "5050:80"
+
+ # zookeeper Need 3.5 or later for container nodes
+  zookeeper:
+    container_name: zookeeper
+    image: zookeeper:3.5
     restart: unless-stopped
-    environment:
-      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pot@gmail.com}
-      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
-      PGADMIN_CONFIG_SERVER_MODE: 'False'
-    volumes:
-      - ./pgadmin:/var/lib/pgadmin
     ports:
-      - "5050:80"
+      - "2181:2181"
+    environment:
+      - ZOO_MY_ID=1
 
-  # # Druid Cordinator
-  # coordinator:
-  #   image: apache/druid:0.22.1
-  #   container_name: coordinator
-  #   volumes:
-  #     - ./a-druid/druid_shared:/opt/shared
-  #     - ./a-druid/coordinator_var:/opt/druid/var
-  #   ports:
-  #     - "8081:8081"
-  #   command:
-  #     - coordinator
-  #   env_file:
-  #     - ./a-druid/environment.env
+ # Kafka
+  kafka:
+    image: confluentinc/cp-kafka:5.2.0
+    hostname: kafka
+    container_name: kafka
+    restart: unless-stopped
+    ports:
+      - '9092:9092'
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
 
-  # # Druid Broker
-  # broker:
-  #   image: apache/druid:0.22.1
-  #   container_name: broker
-  #   volumes:
-  #     - ./a-druid/broker_var:/opt/druid/var
-  #   ports:
-  #     - "8082:8082"
-  #   command:
-  #     - broker
-  #   env_file:
-  #      - ./a-druid/environment.env
+  # Druid Cordinator
+  coordinator:
+    image: apache/druid:0.22.1
+    container_name: coordinator
+    restart: unless-stopped
+    volumes:
+      - ./a-druid/druid_shared:/opt/shared
+      - ./a-druid/coordinator_var:/opt/druid/var
+    ports:
+      - "8081:8081"
+    command:
+      - coordinator
+    env_file:
+      - ./a-druid/environment.env
 
-  # # Druid Historical
-  # historical:
-  #   image: apache/druid:0.22.1
-  #   container_name: historical
-  #   volumes:
-  #     - ./a-druid/druid_shared:/opt/shared
-  #     - ./a-druid/historical_var:/opt/druid/var
-  #   ports:
-  #     - "8083:8083"
-  #   command:
-  #     - historical
-  #   env_file:
-  #     - ./a-druid/environment.env
+  # Druid Broker
+  broker:
+    image: apache/druid:0.22.1
+    container_name: broker
+    restart: unless-stopped
+    volumes:
+      - ./a-druid/broker_var:/opt/druid/var
+    ports:
+      - "8082:8082"
+    command:
+      - broker
+    env_file:
+       - ./a-druid/environment.env
 
-  # # Druid middlemanager
-  # middlemanager:
-  #   image: apache/druid:0.22.1
-  #   container_name: middlemanager
-  #   volumes:
-  #     - ./a-druid/druid_shared:/opt/shared
-  #     - ./a-druid/middle_var:/opt/druid/var
-  #   ports:
-  #     - "8091:8091"
-  #     - "8100-8105:8100-8105"
-  #   command:
-  #     - middleManager
-  #   env_file:
-  #     - ./a-druid/environment.env
+  # Druid Historical
+  historical:
+    image: apache/druid:0.22.1
+    container_name: historical
+    restart: unless-stopped
+    volumes:
+      - ./a-druid/druid_shared:/opt/shared
+      - ./a-druid/historical_var:/opt/druid/var
+    ports:
+      - "8083:8083"
+    command:
+      - historical
+    env_file:
+      - ./a-druid/environment.env
+
+  # Druid middlemanager
+  middlemanager:
+    image: apache/druid:0.22.1
+    container_name: middlemanager
+    volumes:
+      - ./a-druid/druid_shared:/opt/shared
+      - ./a-druid/middle_var:/opt/druid/var
+    ports:
+      - "8091:8091"
+      - "8100-8105:8100-8105"
+    command:
+      - middleManager
+    env_file:
+      - ./a-druid/environment.env
   
-  # # Druid router
-  # router:
-  #   image: apache/druid:0.22.1
-  #   container_name: router
-  #   volumes:
-  #     - ./a-druid/router_var:/opt/druid/var
-  #   ports:
-  #     - "8888:8888"
-  #   command:
-  #     - router
-  #   env_file:
-  #     - ./a-druid/environment.env
+  # Druid router
+  router:
+    image: apache/druid:0.22.1
+    container_name: router
+    restart: unless-stopped
+    volumes:
+      - ./a-druid/router_var:/opt/druid/var
+    ports:
+      - "8888:8888"
+    command:
+      - router
+    env_file:
+      - ./a-druid/environment.env
 
-  # # Superset Demo need change to superset product
-  # superset:
-  #   image: amancevice/superset:0.18.5
-  #   container_name: superset
-  #   ports:
-  #     - 8088:8088
+  # Superset Demo need change to superset latest on production
+  superset:
+    image: amancevice/superset:1.4.1
+    container_name: superset
+    restart: unless-stopped
+    ports:
+      - 8088:8088
     
-  # Airflow db on local need change load in database
+  # Airflow sequency need change to celery on product
   airflow:
     image: duynguyenngoc/dps-hadoop-airflow:3.3.1
     container_name: airflow
+    restart: unless-stopped
     volumes:
       - ./a-airflow/app/:/airflow/
     environment:

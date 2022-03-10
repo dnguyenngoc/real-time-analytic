@@ -1,4 +1,5 @@
 __pycache__
+
 pgadmin
 
 a-druid/broker_var/*
@@ -9,6 +10,7 @@ a-druid/middle_var/*
 a-druid/router_var/*
 a-airflow/app/logs/*
 a-db/data/*
+a-redis/*
 
 
 !a-druid/broker_var/.gitkeep 
@@ -19,4 +21,5 @@ a-db/data/*
 !a-druid/router_var/.gitkeep 
 !a-airflow/app/logs/.gitkeep
 !a-db/data/.gitkeep
+!a-redis/.gitkeep
 
