@@ -50,11 +50,13 @@ In today's world you want to learn from your customers as quickly as possible. T
 
 ### 3. Create Dashboard sample from druid streaming
  - Airflow dags at a-airflow/app/dags/demo.py each one min sent message to kafka 'demo' topic with data 
-   ```{
+```
+   {
             "data_id" : 454,
             "name": 'BTC',
             "timestamp": '2021-02-05T10:10:01'
-    }```
+    }
+```
 
  - From druid load data from kafka, choice 'demo' topic and config data result table
  - From superset add druid like database sqlalchemy uri: druid://broker:8082/druid/v2/sql/
