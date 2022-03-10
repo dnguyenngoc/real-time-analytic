@@ -52,9 +52,9 @@ In today's world you want to learn from your customers as quickly as possible. T
  - Airflow dags at a-airflow/app/dags/demo.py each one min sent message to kafka 'demo' topic with data 
 ```
    {
-            "data_id" : 454,
-            "name": 'BTC',
-            "timestamp": '2021-02-05T10:10:01'
+        "data_id" : 454,
+        "name": 'BTC',
+        "timestamp": '2021-02-05T10:10:01'
     }
 ```
 
