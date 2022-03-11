@@ -64,7 +64,7 @@ In today's world you want to learn from your customers as quickly as possible. T
 </div>
 <br>
 
- - From superset add druid like database sqlalchemy uri: ```druid://broker:8082/druid/v2/sql/```. more detail at [Superset-Database](https://superset.apache.org/docs/databases/db-connection-ui)
+ - From superset add druid like database sqlalchemy uri: ```druid://broker:8082/druid/v2/sql/```. more detail at [Superset-Database-Connect](https://superset.apache.org/docs/databases/db-connection-ui)
  - Create Chart and dashboard on superset from demo table.
  - Enjoy! :fire: :fire: :fire:
 
