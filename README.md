@@ -49,7 +49,7 @@ In today's world you want to learn from your customers as quickly as possible. T
 | Airflow               | http://localhost:3000/           | a-airflow/app/standalone_admin_password.txt   |
 
 ### 3. Create Dashboard sample from druid streaming
- - Airflow dags at a-airflow/app/dags/demo.py each one min sent message to kafka 'demo' topic with data 
+ - Airflow dags at a-airflow/app/dags/demo.py each one min sent message to kafka 'demo' topic with data of list coin ['BTC', 'ETH', 'BTT', 'DOT'] the structure of data message like below.
 ```
    {
         "data_id" : 454,
@@ -59,6 +59,8 @@ In today's world you want to learn from your customers as quickly as possible. T
 ```
 
  - From druid load data from kafka, choice 'demo' topic and config data result table
+ ![myfile](https://github.com/apot-group/real-time-analytic/blob/main/public/druid_connect.gif)
+
  - From superset add druid like database sqlalchemy uri: druid://broker:8082/druid/v2/sql/
  - Create Chart and dashboard on superset from demo table.
  - Enjoy! :fire: :fire: :fire:
