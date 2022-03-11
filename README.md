@@ -62,6 +62,8 @@ In today's world you want to learn from your customers as quickly as possible. T
 <div>
     <img src="https://github.com/apot-group/real-time-analytic/blob/main/public/druid_connect.gif" />
 </div>
+<br>
+
  - From superset add druid like database sqlalchemy uri: druid://broker:8082/druid/v2/sql/
  - Create Chart and dashboard on superset from demo table.
  - Enjoy! :fire: :fire: :fire:
