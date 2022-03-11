@@ -58,14 +58,14 @@ In today's world you want to learn from your customers as quickly as possible. T
     }
 ```
 
- - From druid load data from kafka, choice 'demo' topic and config data result table
+ - From druid load data from kafka ```kafka:9092```, choice ```demo``` topic and config data result table
 <div>
     <img src="https://github.com/apot-group/real-time-analytic/blob/main/public/druid_connect.gif" />
 </div>
 <br>
 
  - From superset add druid like database sqlalchemy uri: ```druid://broker:8082/druid/v2/sql/```. more detail at [Superset-Database-Connect](https://superset.apache.org/docs/databases/db-connection-ui)
- - Create Chart and dashboard on superset from demo table.
+ - Create Chart and dashboard on superset from ```demo``` table.
  - Enjoy! :fire: :fire: :fire:
 
 ## Contact Us
