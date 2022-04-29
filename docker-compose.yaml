@@ -145,7 +145,7 @@ services:
     
   # Airflow sequency need change to celery on product
   airflow:
-    image: duynguyenngoc/dps-hadoop-airflow:3.3.1
+    image: duynguyenngoc/hadoop-airflow:3.3.2
     container_name: airflow
     restart: unless-stopped
     volumes:
