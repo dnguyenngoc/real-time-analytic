@@ -2,24 +2,8 @@ __pycache__
 
 pgadmin
 
-a-druid/broker_var/*
-a-druid/coordinator_var/*
-a-druid/druid_shared/*
-a-druid/historical_var/*
-a-druid/middle_var/*
-a-druid/router_var/*
-a-airflow/app/logs/*
-a-db/data/*
-a-redis/*
-a-airflow/app/temp_test/*
-
-
-!a-druid/broker_var/.gitkeep 
-!a-druid/coordinator_var/.gitkeep 
-!a-druid/druid_shared/.gitkeep 
-!a-druid/historical_var/.gitkeep 
-!a-druid/middle_var/.gitkeep 
-!a-druid/router_var/.gitkeep 
-!a-airflow/app/logs/.gitkeep
-!a-redis/.gitkeep
-
+app_airflow/app/logs/*
+app_airflow/app/temp_test/*
+!app_airflow/app/logs/.gitkeep
+airflow.db
+superset.db

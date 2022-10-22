@@ -1,0 +1,1 @@
+cd ./druid && DOCKER_BUILDKIT=1 docker build -t duynguyenngoc/druid:v1.0.0 -f distribution/docker/Dockerfile .
