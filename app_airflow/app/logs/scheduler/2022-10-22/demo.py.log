@@ -1,0 +1,180 @@
+[2022-10-22 03:15:26,093] {processor.py:163} INFO - Started process (PID=26) to work on /airflow/dags/demo.py
+[2022-10-22 03:15:26,095] {processor.py:642} INFO - Processing file /airflow/dags/demo.py for tasks to queue
+[2022-10-22 03:15:26,096] {logging_mixin.py:109} INFO - [2022-10-22 03:15:26,096] {dagbag.py:500} INFO - Filling up the DagBag from /airflow/dags/demo.py
+[2022-10-22 03:15:26,113] {logging_mixin.py:109} INFO - [2022-10-22 03:15:26,111] {dagbag.py:334} ERROR - Failed to import: /airflow/dags/demo.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/airflow/dags/demo.py", line 7, in <module>
+    from kafka import KafkaProducer
+ModuleNotFoundError: No module named 'kafka'
+[2022-10-22 03:15:26,126] {processor.py:656} WARNING - No viable dags retrieved from /airflow/dags/demo.py
+[2022-10-22 03:15:26,138] {processor.py:171} INFO - Processing /airflow/dags/demo.py took 0.048 seconds
+[2022-10-22 03:15:56,399] {processor.py:163} INFO - Started process (PID=34) to work on /airflow/dags/demo.py
+[2022-10-22 03:15:56,401] {processor.py:642} INFO - Processing file /airflow/dags/demo.py for tasks to queue
+[2022-10-22 03:15:56,402] {logging_mixin.py:109} INFO - [2022-10-22 03:15:56,402] {dagbag.py:500} INFO - Filling up the DagBag from /airflow/dags/demo.py
+[2022-10-22 03:15:56,416] {logging_mixin.py:109} INFO - [2022-10-22 03:15:56,414] {dagbag.py:334} ERROR - Failed to import: /airflow/dags/demo.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/airflow/dags/demo.py", line 7, in <module>
+    from kafka import KafkaProducer
+ModuleNotFoundError: No module named 'kafka'
+[2022-10-22 03:15:56,427] {processor.py:656} WARNING - No viable dags retrieved from /airflow/dags/demo.py
+[2022-10-22 03:15:56,438] {processor.py:171} INFO - Processing /airflow/dags/demo.py took 0.043 seconds
+[2022-10-22 03:16:26,859] {processor.py:163} INFO - Started process (PID=35) to work on /airflow/dags/demo.py
+[2022-10-22 03:16:26,861] {processor.py:642} INFO - Processing file /airflow/dags/demo.py for tasks to queue
+[2022-10-22 03:16:26,862] {logging_mixin.py:109} INFO - [2022-10-22 03:16:26,862] {dagbag.py:500} INFO - Filling up the DagBag from /airflow/dags/demo.py
+[2022-10-22 03:16:26,876] {logging_mixin.py:109} INFO - [2022-10-22 03:16:26,874] {dagbag.py:334} ERROR - Failed to import: /airflow/dags/demo.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/airflow/dags/demo.py", line 7, in <module>
+    from kafka import KafkaProducer
+ModuleNotFoundError: No module named 'kafka'
+[2022-10-22 03:16:26,887] {processor.py:656} WARNING - No viable dags retrieved from /airflow/dags/demo.py
+[2022-10-22 03:16:26,901] {processor.py:171} INFO - Processing /airflow/dags/demo.py took 0.046 seconds
+[2022-10-22 03:18:48,431] {processor.py:163} INFO - Started process (PID=26) to work on /airflow/dags/demo.py
+[2022-10-22 03:18:48,433] {processor.py:642} INFO - Processing file /airflow/dags/demo.py for tasks to queue
+[2022-10-22 03:18:48,434] {logging_mixin.py:109} INFO - [2022-10-22 03:18:48,434] {dagbag.py:500} INFO - Filling up the DagBag from /airflow/dags/demo.py
+[2022-10-22 03:18:48,497] {logging_mixin.py:109} INFO - [2022-10-22 03:18:48,497] {conn.py:381} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.20.0.5', 9092)]>: connecting to kafka:9092 [('172.20.0.5', 9092) IPv4]
+[2022-10-22 03:18:48,498] {logging_mixin.py:109} INFO - [2022-10-22 03:18:48,498] {conn.py:1205} INFO - Probing node bootstrap-0 broker version
+[2022-10-22 03:18:48,500] {logging_mixin.py:109} INFO - [2022-10-22 03:18:48,499] {conn.py:419} ERROR - Connect attempt to <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.20.0.5', 9092)]> returned error 111. Disconnecting.
+[2022-10-22 03:18:48,500] {logging_mixin.py:109} INFO - [2022-10-22 03:18:48,500] {conn.py:919} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.20.0.5', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+[2022-10-22 03:18:48,546] {logging_mixin.py:109} INFO - [2022-10-22 03:18:48,546] {conn.py:381} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.20.0.5', 9092)]>: connecting to kafka:9092 [('172.20.0.5', 9092) IPv4]
+[2022-10-22 03:18:48,547] {logging_mixin.py:109} INFO - [2022-10-22 03:18:48,547] {conn.py:419} ERROR - Connect attempt to <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.20.0.5', 9092)]> returned error 111. Disconnecting.
+[2022-10-22 03:18:48,548] {logging_mixin.py:109} INFO - [2022-10-22 03:18:48,548] {conn.py:919} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.20.0.5', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+[2022-10-22 03:18:48,551] {logging_mixin.py:109} INFO - [2022-10-22 03:18:48,549] {dagbag.py:334} ERROR - Failed to import: /airflow/dags/demo.py
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/airflow/dags/demo.py", line 22, in <module>
+    value_serializer=serializer
+  File "/usr/local/lib/python3.7/site-packages/kafka/producer/kafka.py", line 383, in __init__
+    **self.config)
+  File "/usr/local/lib/python3.7/site-packages/kafka/client_async.py", line 244, in __init__
+    self.config['api_version'] = self.check_version(timeout=check_timeout)
+  File "/usr/local/lib/python3.7/site-packages/kafka/client_async.py", line 900, in check_version
+    raise Errors.NoBrokersAvailable()
+kafka.errors.NoBrokersAvailable: NoBrokersAvailable
+[2022-10-22 03:18:48,562] {processor.py:656} WARNING - No viable dags retrieved from /airflow/dags/demo.py
+[2022-10-22 03:18:48,573] {processor.py:171} INFO - Processing /airflow/dags/demo.py took 0.145 seconds
+[2022-10-22 03:19:18,721] {processor.py:163} INFO - Started process (PID=34) to work on /airflow/dags/demo.py
+[2022-10-22 03:19:18,723] {processor.py:642} INFO - Processing file /airflow/dags/demo.py for tasks to queue
+[2022-10-22 03:19:18,725] {logging_mixin.py:109} INFO - [2022-10-22 03:19:18,725] {dagbag.py:500} INFO - Filling up the DagBag from /airflow/dags/demo.py
+[2022-10-22 03:19:18,801] {logging_mixin.py:109} INFO - [2022-10-22 03:19:18,801] {conn.py:381} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.20.0.5', 9092)]>: connecting to kafka:9092 [('172.20.0.5', 9092) IPv4]
+[2022-10-22 03:19:18,802] {logging_mixin.py:109} INFO - [2022-10-22 03:19:18,802] {conn.py:1205} INFO - Probing node bootstrap-0 broker version
+[2022-10-22 03:19:18,805] {logging_mixin.py:109} INFO - [2022-10-22 03:19:18,804] {conn.py:410} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.20.0.5', 9092)]>: Connection complete.
+[2022-10-22 03:19:18,922] {logging_mixin.py:109} INFO - [2022-10-22 03:19:18,922] {conn.py:1267} INFO - Broker version identified as 2.5.0
+[2022-10-22 03:19:18,922] {logging_mixin.py:109} INFO - [2022-10-22 03:19:18,922] {conn.py:1269} INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+[2022-10-22 03:19:18,960] {processor.py:654} INFO - DAG(s) dict_keys(['Demo']) retrieved from /airflow/dags/demo.py
+[2022-10-22 03:19:19,793] {logging_mixin.py:109} INFO - [2022-10-22 03:19:19,793] {manager.py:496} INFO - Created Permission View: can edit on DAG:Demo
+[2022-10-22 03:19:19,825] {logging_mixin.py:109} INFO - [2022-10-22 03:19:19,824] {manager.py:496} INFO - Created Permission View: can read on DAG:Demo
+[2022-10-22 03:19:19,825] {logging_mixin.py:109} INFO - [2022-10-22 03:19:19,825] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-10-22 03:19:19,838] {logging_mixin.py:109} INFO - [2022-10-22 03:19:19,837] {dag.py:2417} INFO - Creating ORM DAG for Demo
+[2022-10-22 03:19:19,874] {logging_mixin.py:109} INFO - [2022-10-22 03:19:19,874] {dag.py:2937} INFO - Setting next_dagrun for Demo to 2022-10-22T03:18:00+00:00
+[2022-10-22 03:19:19,896] {processor.py:171} INFO - Processing /airflow/dags/demo.py took 1.179 seconds
+[2022-10-22 03:20:40,531] {processor.py:163} INFO - Started process (PID=42) to work on /airflow/dags/demo.py
+[2022-10-22 03:20:40,533] {processor.py:642} INFO - Processing file /airflow/dags/demo.py for tasks to queue
+[2022-10-22 03:20:40,535] {logging_mixin.py:109} INFO - [2022-10-22 03:20:40,535] {dagbag.py:500} INFO - Filling up the DagBag from /airflow/dags/demo.py
+[2022-10-22 03:20:40,600] {logging_mixin.py:109} INFO - [2022-10-22 03:20:40,600] {conn.py:381} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.20.0.5', 9092)]>: connecting to kafka:9092 [('172.20.0.5', 9092) IPv4]
+[2022-10-22 03:20:40,601] {logging_mixin.py:109} INFO - [2022-10-22 03:20:40,601] {conn.py:1205} INFO - Probing node bootstrap-0 broker version
+[2022-10-22 03:20:40,603] {logging_mixin.py:109} INFO - [2022-10-22 03:20:40,602] {conn.py:410} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.20.0.5', 9092)]>: Connection complete.
+[2022-10-22 03:20:40,706] {logging_mixin.py:109} INFO - [2022-10-22 03:20:40,706] {conn.py:1267} INFO - Broker version identified as 2.5.0
+[2022-10-22 03:20:40,707] {logging_mixin.py:109} INFO - [2022-10-22 03:20:40,707] {conn.py:1269} INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+[2022-10-22 03:20:40,723] {processor.py:654} INFO - DAG(s) dict_keys(['Demo']) retrieved from /airflow/dags/demo.py
+[2022-10-22 03:20:40,735] {logging_mixin.py:109} INFO - [2022-10-22 03:20:40,735] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-10-22 03:20:40,758] {logging_mixin.py:109} INFO - [2022-10-22 03:20:40,758] {dag.py:2937} INFO - Setting next_dagrun for Demo to 2022-10-22T03:19:00+00:00
+[2022-10-22 03:20:40,772] {processor.py:171} INFO - Processing /airflow/dags/demo.py took 0.245 seconds
+[2022-10-22 03:21:43,811] {processor.py:163} INFO - Started process (PID=50) to work on /airflow/dags/demo.py
+[2022-10-22 03:21:43,813] {processor.py:642} INFO - Processing file /airflow/dags/demo.py for tasks to queue
+[2022-10-22 03:21:43,815] {logging_mixin.py:109} INFO - [2022-10-22 03:21:43,815] {dagbag.py:500} INFO - Filling up the DagBag from /airflow/dags/demo.py
+[2022-10-22 03:21:43,878] {logging_mixin.py:109} INFO - [2022-10-22 03:21:43,878] {conn.py:381} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.20.0.5', 9092)]>: connecting to kafka:9092 [('172.20.0.5', 9092) IPv4]
+[2022-10-22 03:21:43,878] {logging_mixin.py:109} INFO - [2022-10-22 03:21:43,878] {conn.py:1205} INFO - Probing node bootstrap-0 broker version
+[2022-10-22 03:21:43,881] {logging_mixin.py:109} INFO - [2022-10-22 03:21:43,880] {conn.py:410} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.20.0.5', 9092)]>: Connection complete.
+[2022-10-22 03:21:43,985] {logging_mixin.py:109} INFO - [2022-10-22 03:21:43,985] {conn.py:1267} INFO - Broker version identified as 2.5.0
+[2022-10-22 03:21:43,986] {logging_mixin.py:109} INFO - [2022-10-22 03:21:43,986] {conn.py:1269} INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+[2022-10-22 03:21:44,002] {processor.py:654} INFO - DAG(s) dict_keys(['Demo']) retrieved from /airflow/dags/demo.py
+[2022-10-22 03:21:44,014] {logging_mixin.py:109} INFO - [2022-10-22 03:21:44,014] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-10-22 03:21:44,037] {logging_mixin.py:109} INFO - [2022-10-22 03:21:44,037] {dag.py:2937} INFO - Setting next_dagrun for Demo to 2022-10-22T03:20:00+00:00
+[2022-10-22 03:21:44,050] {processor.py:171} INFO - Processing /airflow/dags/demo.py took 0.243 seconds
+[2022-10-22 03:22:46,885] {processor.py:163} INFO - Started process (PID=58) to work on /airflow/dags/demo.py
+[2022-10-22 03:22:46,887] {processor.py:642} INFO - Processing file /airflow/dags/demo.py for tasks to queue
+[2022-10-22 03:22:46,889] {logging_mixin.py:109} INFO - [2022-10-22 03:22:46,889] {dagbag.py:500} INFO - Filling up the DagBag from /airflow/dags/demo.py
+[2022-10-22 03:22:46,957] {logging_mixin.py:109} INFO - [2022-10-22 03:22:46,957] {conn.py:381} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.20.0.5', 9092)]>: connecting to kafka:9092 [('172.20.0.5', 9092) IPv4]
+[2022-10-22 03:22:46,958] {logging_mixin.py:109} INFO - [2022-10-22 03:22:46,958] {conn.py:1205} INFO - Probing node bootstrap-0 broker version
+[2022-10-22 03:22:46,960] {logging_mixin.py:109} INFO - [2022-10-22 03:22:46,959] {conn.py:410} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.20.0.5', 9092)]>: Connection complete.
+[2022-10-22 03:22:47,063] {logging_mixin.py:109} INFO - [2022-10-22 03:22:47,063] {conn.py:1267} INFO - Broker version identified as 2.5.0
+[2022-10-22 03:22:47,064] {logging_mixin.py:109} INFO - [2022-10-22 03:22:47,064] {conn.py:1269} INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+[2022-10-22 03:22:47,081] {processor.py:654} INFO - DAG(s) dict_keys(['Demo']) retrieved from /airflow/dags/demo.py
+[2022-10-22 03:22:47,091] {logging_mixin.py:109} INFO - [2022-10-22 03:22:47,091] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-10-22 03:22:47,116] {logging_mixin.py:109} INFO - [2022-10-22 03:22:47,116] {dag.py:2937} INFO - Setting next_dagrun for Demo to 2022-10-22T03:21:00+00:00
+[2022-10-22 03:22:47,129] {processor.py:171} INFO - Processing /airflow/dags/demo.py took 0.248 seconds
+[2022-10-22 03:23:50,023] {processor.py:163} INFO - Started process (PID=66) to work on /airflow/dags/demo.py
+[2022-10-22 03:23:50,026] {processor.py:642} INFO - Processing file /airflow/dags/demo.py for tasks to queue
+[2022-10-22 03:23:50,027] {logging_mixin.py:109} INFO - [2022-10-22 03:23:50,027] {dagbag.py:500} INFO - Filling up the DagBag from /airflow/dags/demo.py
+[2022-10-22 03:23:50,121] {logging_mixin.py:109} INFO - [2022-10-22 03:23:50,121] {conn.py:381} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.20.0.5', 9092)]>: connecting to kafka:9092 [('172.20.0.5', 9092) IPv4]
+[2022-10-22 03:23:50,122] {logging_mixin.py:109} INFO - [2022-10-22 03:23:50,122] {conn.py:1205} INFO - Probing node bootstrap-0 broker version
+[2022-10-22 03:23:50,125] {logging_mixin.py:109} INFO - [2022-10-22 03:23:50,124] {conn.py:410} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.20.0.5', 9092)]>: Connection complete.
+[2022-10-22 03:23:50,231] {logging_mixin.py:109} INFO - [2022-10-22 03:23:50,231] {conn.py:1267} INFO - Broker version identified as 2.5.0
+[2022-10-22 03:23:50,232] {logging_mixin.py:109} INFO - [2022-10-22 03:23:50,232] {conn.py:1269} INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+[2022-10-22 03:23:50,250] {processor.py:654} INFO - DAG(s) dict_keys(['Demo']) retrieved from /airflow/dags/demo.py
+[2022-10-22 03:23:50,261] {logging_mixin.py:109} INFO - [2022-10-22 03:23:50,260] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-10-22 03:23:50,285] {logging_mixin.py:109} INFO - [2022-10-22 03:23:50,285] {dag.py:2937} INFO - Setting next_dagrun for Demo to 2022-10-22T03:22:00+00:00
+[2022-10-22 03:23:50,297] {processor.py:171} INFO - Processing /airflow/dags/demo.py took 0.277 seconds
+[2022-10-22 03:24:20,338] {processor.py:163} INFO - Started process (PID=78) to work on /airflow/dags/demo.py
+[2022-10-22 03:24:20,340] {processor.py:642} INFO - Processing file /airflow/dags/demo.py for tasks to queue
+[2022-10-22 03:24:20,342] {logging_mixin.py:109} INFO - [2022-10-22 03:24:20,342] {dagbag.py:500} INFO - Filling up the DagBag from /airflow/dags/demo.py
+[2022-10-22 03:24:20,451] {logging_mixin.py:109} INFO - [2022-10-22 03:24:20,451] {conn.py:381} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.20.0.5', 9092)]>: connecting to kafka:9092 [('172.20.0.5', 9092) IPv4]
+[2022-10-22 03:24:20,452] {logging_mixin.py:109} INFO - [2022-10-22 03:24:20,452] {conn.py:1205} INFO - Probing node bootstrap-0 broker version
+[2022-10-22 03:24:20,456] {logging_mixin.py:109} INFO - [2022-10-22 03:24:20,455] {conn.py:410} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.20.0.5', 9092)]>: Connection complete.
+[2022-10-22 03:24:20,561] {logging_mixin.py:109} INFO - [2022-10-22 03:24:20,561] {conn.py:1267} INFO - Broker version identified as 2.5.0
+[2022-10-22 03:24:20,562] {logging_mixin.py:109} INFO - [2022-10-22 03:24:20,562] {conn.py:1269} INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+[2022-10-22 03:24:20,613] {processor.py:654} INFO - DAG(s) dict_keys(['Demo']) retrieved from /airflow/dags/demo.py
+[2022-10-22 03:24:20,640] {logging_mixin.py:109} INFO - [2022-10-22 03:24:20,639] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-10-22 03:24:20,683] {logging_mixin.py:109} INFO - [2022-10-22 03:24:20,683] {dag.py:2937} INFO - Setting next_dagrun for Demo to 2022-10-22T03:24:00+00:00
+[2022-10-22 03:24:20,705] {processor.py:171} INFO - Processing /airflow/dags/demo.py took 0.372 seconds
+[2022-10-22 03:24:51,184] {processor.py:163} INFO - Started process (PID=80) to work on /airflow/dags/demo.py
+[2022-10-22 03:24:51,186] {processor.py:642} INFO - Processing file /airflow/dags/demo.py for tasks to queue
+[2022-10-22 03:24:51,187] {logging_mixin.py:109} INFO - [2022-10-22 03:24:51,187] {dagbag.py:500} INFO - Filling up the DagBag from /airflow/dags/demo.py
+[2022-10-22 03:24:51,253] {logging_mixin.py:109} INFO - [2022-10-22 03:24:51,253] {conn.py:381} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.20.0.5', 9092)]>: connecting to kafka:9092 [('172.20.0.5', 9092) IPv4]
+[2022-10-22 03:24:51,254] {logging_mixin.py:109} INFO - [2022-10-22 03:24:51,254] {conn.py:1205} INFO - Probing node bootstrap-0 broker version
+[2022-10-22 03:24:51,256] {logging_mixin.py:109} INFO - [2022-10-22 03:24:51,255] {conn.py:410} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.20.0.5', 9092)]>: Connection complete.
+[2022-10-22 03:24:51,360] {logging_mixin.py:109} INFO - [2022-10-22 03:24:51,360] {conn.py:1267} INFO - Broker version identified as 2.5.0
+[2022-10-22 03:24:51,360] {logging_mixin.py:109} INFO - [2022-10-22 03:24:51,360] {conn.py:1269} INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+[2022-10-22 03:24:51,380] {processor.py:654} INFO - DAG(s) dict_keys(['Demo']) retrieved from /airflow/dags/demo.py
+[2022-10-22 03:24:51,391] {logging_mixin.py:109} INFO - [2022-10-22 03:24:51,391] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-10-22 03:24:51,414] {logging_mixin.py:109} INFO - [2022-10-22 03:24:51,414] {dag.py:2937} INFO - Setting next_dagrun for Demo to 2022-10-22T03:24:00+00:00
+[2022-10-22 03:24:51,427] {processor.py:171} INFO - Processing /airflow/dags/demo.py took 0.247 seconds
+[2022-10-22 03:25:22,373] {processor.py:163} INFO - Started process (PID=87) to work on /airflow/dags/demo.py
+[2022-10-22 03:25:22,377] {processor.py:642} INFO - Processing file /airflow/dags/demo.py for tasks to queue
+[2022-10-22 03:25:22,379] {logging_mixin.py:109} INFO - [2022-10-22 03:25:22,379] {dagbag.py:500} INFO - Filling up the DagBag from /airflow/dags/demo.py
+[2022-10-22 03:25:22,496] {logging_mixin.py:109} INFO - [2022-10-22 03:25:22,496] {conn.py:381} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.20.0.5', 9092)]>: connecting to kafka:9092 [('172.20.0.5', 9092) IPv4]
+[2022-10-22 03:25:22,497] {logging_mixin.py:109} INFO - [2022-10-22 03:25:22,497] {conn.py:1205} INFO - Probing node bootstrap-0 broker version
+[2022-10-22 03:25:22,502] {logging_mixin.py:109} INFO - [2022-10-22 03:25:22,500] {conn.py:410} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.20.0.5', 9092)]>: Connection complete.
+[2022-10-22 03:25:22,606] {logging_mixin.py:109} INFO - [2022-10-22 03:25:22,606] {conn.py:1267} INFO - Broker version identified as 2.5.0
+[2022-10-22 03:25:22,607] {logging_mixin.py:109} INFO - [2022-10-22 03:25:22,607] {conn.py:1269} INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+[2022-10-22 03:25:22,645] {processor.py:654} INFO - DAG(s) dict_keys(['Demo']) retrieved from /airflow/dags/demo.py
+[2022-10-22 03:25:22,667] {logging_mixin.py:109} INFO - [2022-10-22 03:25:22,667] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-10-22 03:25:22,703] {logging_mixin.py:109} INFO - [2022-10-22 03:25:22,703] {dag.py:2937} INFO - Setting next_dagrun for Demo to 2022-10-22T03:25:00+00:00
+[2022-10-22 03:25:22,724] {processor.py:171} INFO - Processing /airflow/dags/demo.py took 0.364 seconds
+[2022-10-22 03:25:53,288] {processor.py:163} INFO - Started process (PID=89) to work on /airflow/dags/demo.py
+[2022-10-22 03:25:53,289] {processor.py:642} INFO - Processing file /airflow/dags/demo.py for tasks to queue
+[2022-10-22 03:25:53,291] {logging_mixin.py:109} INFO - [2022-10-22 03:25:53,290] {dagbag.py:500} INFO - Filling up the DagBag from /airflow/dags/demo.py
+[2022-10-22 03:25:53,377] {logging_mixin.py:109} INFO - [2022-10-22 03:25:53,376] {conn.py:381} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.20.0.5', 9092)]>: connecting to kafka:9092 [('172.20.0.5', 9092) IPv4]
+[2022-10-22 03:25:53,377] {logging_mixin.py:109} INFO - [2022-10-22 03:25:53,377] {conn.py:1205} INFO - Probing node bootstrap-0 broker version
+[2022-10-22 03:25:53,380] {logging_mixin.py:109} INFO - [2022-10-22 03:25:53,379] {conn.py:410} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.20.0.5', 9092)]>: Connection complete.
+[2022-10-22 03:25:53,485] {logging_mixin.py:109} INFO - [2022-10-22 03:25:53,484] {conn.py:1267} INFO - Broker version identified as 2.5.0
+[2022-10-22 03:25:53,485] {logging_mixin.py:109} INFO - [2022-10-22 03:25:53,485] {conn.py:1269} INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+[2022-10-22 03:25:53,505] {processor.py:654} INFO - DAG(s) dict_keys(['Demo']) retrieved from /airflow/dags/demo.py
+[2022-10-22 03:25:53,517] {logging_mixin.py:109} INFO - [2022-10-22 03:25:53,517] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-10-22 03:25:53,543] {logging_mixin.py:109} INFO - [2022-10-22 03:25:53,543] {dag.py:2937} INFO - Setting next_dagrun for Demo to 2022-10-22T03:25:00+00:00
+[2022-10-22 03:25:53,560] {processor.py:171} INFO - Processing /airflow/dags/demo.py took 0.277 seconds

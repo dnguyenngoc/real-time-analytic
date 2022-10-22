@@ -22,4 +22,5 @@ a-airflow/app/temp_test/*
 !a-druid/router_var/.gitkeep 
 !a-airflow/app/logs/.gitkeep
 !a-redis/.gitkeep
-
+airflow.db
+superset.db

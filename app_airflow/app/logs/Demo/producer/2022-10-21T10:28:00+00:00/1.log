@@ -1,0 +1,74 @@
+[2022-10-21 10:29:47,155] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: Demo.producer scheduled__2022-10-21T10:28:00+00:00 [queued]>
+[2022-10-21 10:29:47,166] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: Demo.producer scheduled__2022-10-21T10:28:00+00:00 [queued]>
+[2022-10-21 10:29:47,166] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-21 10:29:47,167] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-10-21 10:29:47,167] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-21 10:29:47,177] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): producer> on 2022-10-21 10:28:00+00:00
+[2022-10-21 10:29:47,180] {standard_task_runner.py:52} INFO - Started process 79 to run task
+[2022-10-21 10:29:47,185] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'Demo', 'producer', 'scheduled__2022-10-21T10:28:00+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/demo.py', '--cfg-path', '/tmp/tmpbx186x3l', '--error-file', '/tmp/tmpc_30eo7g']
+[2022-10-21 10:29:47,186] {standard_task_runner.py:77} INFO - Job 24: Subtask producer
+[2022-10-21 10:29:47,227] {logging_mixin.py:109} INFO - Running <TaskInstance: Demo.producer scheduled__2022-10-21T10:28:00+00:00 [running]> on host 9bfc88c42e7a
+[2022-10-21 10:29:47,269] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Demo
+AIRFLOW_CTX_TASK_ID=producer
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-21T10:28:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-21T10:28:00+00:00
+[2022-10-21 10:29:47,270] {logging_mixin.py:109} INFO - Producing message @ 2022-10-21 10:29:47.270788 | Message = {'data_id': 15, 'name': 'BTC', 'timestamp': 1666348187}
+[2022-10-21 10:30:47,272] {taskinstance.py:1718} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/usr/local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/usr/local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/usr/local/lib/python3.9/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/usr/local/lib/python3.9/site-packages/airflow/operators/python.py", line 188, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/airflow/dags/demo.py", line 65, in demo_func
+    kafka_p.send('demo', item)
+  File "/usr/local/lib/python3.9/site-packages/kafka/producer/kafka.py", line 576, in send
+    self._wait_on_metadata(topic, self.config['max_block_ms'] / 1000.0)
+  File "/usr/local/lib/python3.9/site-packages/kafka/producer/kafka.py", line 702, in _wait_on_metadata
+    raise Errors.KafkaTimeoutError(
+kafka.errors.KafkaTimeoutError: KafkaTimeoutError: Failed to update metadata after 60.0 secs.
+[2022-10-21 10:30:47,281] {taskinstance.py:1272} INFO - Marking task as FAILED. dag_id=Demo, task_id=producer, execution_date=20221021T102800, start_date=20221021T102947, end_date=20221021T103047
+[2022-10-21 10:30:47,292] {standard_task_runner.py:89} ERROR - Failed to execute job 24 for task producer
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/usr/local/lib/python3.9/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/usr/local/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/usr/local/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 180, in _run_raw_task
+    ti._run_raw_task(
+  File "/usr/local/lib/python3.9/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/usr/local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/usr/local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/usr/local/lib/python3.9/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/usr/local/lib/python3.9/site-packages/airflow/operators/python.py", line 188, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/airflow/dags/demo.py", line 65, in demo_func
+    kafka_p.send('demo', item)
+  File "/usr/local/lib/python3.9/site-packages/kafka/producer/kafka.py", line 576, in send
+    self._wait_on_metadata(topic, self.config['max_block_ms'] / 1000.0)
+  File "/usr/local/lib/python3.9/site-packages/kafka/producer/kafka.py", line 702, in _wait_on_metadata
+    raise Errors.KafkaTimeoutError(
+kafka.errors.KafkaTimeoutError: KafkaTimeoutError: Failed to update metadata after 60.0 secs.
+[2022-10-21 10:30:47,319] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-10-21 10:30:47,331] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,26 @@
+[2022-03-10 19:25:02,211] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: Demo.producer scheduled__2022-03-10T19:24:00+00:00 [queued]>
+[2022-03-10 19:25:02,223] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: Demo.producer scheduled__2022-03-10T19:24:00+00:00 [queued]>
+[2022-03-10 19:25:02,224] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-10 19:25:02,225] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-03-10 19:25:02,225] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-10 19:25:02,237] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): producer> on 2022-03-10 19:24:00+00:00
+[2022-03-10 19:25:02,240] {standard_task_runner.py:52} INFO - Started process 707 to run task
+[2022-03-10 19:25:02,244] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'Demo', 'producer', 'scheduled__2022-03-10T19:24:00+00:00', '--job-id', '70', '--raw', '--subdir', 'DAGS_FOLDER/demo.py', '--cfg-path', '/tmp/tmp_effdpd4', '--error-file', '/tmp/tmpq9s3woct']
+[2022-03-10 19:25:02,245] {standard_task_runner.py:77} INFO - Job 70: Subtask producer
+[2022-03-10 19:25:02,363] {logging_mixin.py:109} INFO - Running <TaskInstance: Demo.producer scheduled__2022-03-10T19:24:00+00:00 [running]> on host c17209ace312
+[2022-03-10 19:25:02,463] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Demo
+AIRFLOW_CTX_TASK_ID=producer
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-10T19:24:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-03-10T19:24:00+00:00
+[2022-03-10 19:25:02,465] {logging_mixin.py:109} INFO - Producing message @ 2022-03-10 19:25:02.465078 | Message = {'data_id': 315, 'name': 'BTC', 'timestamp': 1646940302}
+[2022-03-10 19:25:02,466] {logging_mixin.py:109} INFO - Producing message @ 2022-03-10 19:25:02.466333 | Message = {'data_id': 61, 'name': 'ETH', 'timestamp': 1646940302}
+[2022-03-10 19:25:02,467] {logging_mixin.py:109} INFO - Producing message @ 2022-03-10 19:25:02.467027 | Message = {'data_id': 26, 'name': 'BTT', 'timestamp': 1646940302}
+[2022-03-10 19:25:02,467] {logging_mixin.py:109} INFO - Producing message @ 2022-03-10 19:25:02.467666 | Message = {'data_id': 119, 'name': 'DOT', 'timestamp': 1646940302}
+[2022-03-10 19:25:02,468] {python.py:175} INFO - Done. Returned value was: None
+[2022-03-10 19:25:02,502] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=Demo, task_id=producer, execution_date=20220310T192400, start_date=20220310T192502, end_date=20220310T192502
+[2022-03-10 19:25:02,538] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-10 19:25:02,609] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

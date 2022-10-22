@@ -1,0 +1,19 @@
+[2022-10-21 10:56:58,853] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: Demo.producer scheduled__2022-10-21T10:55:00+00:00 [queued]>
+[2022-10-21 10:56:58,858] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: Demo.producer scheduled__2022-10-21T10:55:00+00:00 [queued]>
+[2022-10-21 10:56:58,859] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-21 10:56:58,859] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-10-21 10:56:58,860] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-21 10:56:58,868] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): producer> on 2022-10-21 10:55:00+00:00
+[2022-10-21 10:56:58,871] {standard_task_runner.py:52} INFO - Started process 200 to run task
+[2022-10-21 10:56:58,874] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'Demo', 'producer', 'scheduled__2022-10-21T10:55:00+00:00', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/demo.py', '--cfg-path', '/tmp/tmpbl7ejpnl', '--error-file', '/tmp/tmph2wb1ket']
+[2022-10-21 10:56:58,875] {standard_task_runner.py:77} INFO - Job 22: Subtask producer
+[2022-10-21 10:56:58,909] {logging_mixin.py:109} INFO - Running <TaskInstance: Demo.producer scheduled__2022-10-21T10:55:00+00:00 [running]> on host 4c1937bb97ee
+[2022-10-21 10:56:58,940] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Demo
+AIRFLOW_CTX_TASK_ID=producer
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-21T10:55:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-21T10:55:00+00:00
+[2022-10-21 10:56:58,941] {logging_mixin.py:109} INFO - Producing message @ 2022-10-21 10:56:58.941269 | Message = {'data_id': 81, 'name': 'BTC', 'timestamp': 1666349818}
