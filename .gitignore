@@ -5,5 +5,8 @@ pgadmin
 app_airflow/app/logs/*
 app_airflow/app/temp_test/*
 !app_airflow/app/logs/.gitkeep
+app_redis/*
+!app_redis/.gitkeep
+
 airflow.db
 superset.db
