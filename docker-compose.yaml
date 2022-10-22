@@ -181,4 +181,4 @@ services:
     image: redis
     restart: unless-stopped
     volumes:
-      - ./a-redis:/data
+      - ./app_redis:/data
