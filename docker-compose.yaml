@@ -17,9 +17,11 @@ services:
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
       ZOOKEEPER_TICK_TIME: 2000
+      ZOO_MY_ID: 1
     ports:
       - 22181:2181
 
+  # Kafka
   kafka:
     image: confluentinc/cp-kafka:latest
     depends_on:
@@ -38,121 +40,127 @@ services:
       KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
 
 
-  # # Database for druid
-  # postgres:
-  #   container_name: postgres
-  #   image: postgres:14.1-alpine
-  #   restart: unless-stopped
-  #   volumes:
-  #     - metadata_data:/var/lib/postgresql/data
-  #   ports:
-  #     - 5432:5432
-  #   environment:
-  #     - POSTGRES_PASSWORD=FoolishPassword
-  #     - POSTGRES_USER=druid
-  #     - POSTGRES_DB=druid
+  # Database for druid
+  postgres:
+    container_name: postgres
+    image: postgres:14.1-alpine
+    restart: unless-stopped
+    volumes:
+      - metadata_data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=FoolishPassword
+      - POSTGRES_USER=druid
+      - POSTGRES_DB=druid
 
 
-  # # Druid Cordinator
-  # coordinator:
-  #   image: duynguyenngoc/druid:v1.0.0
-  #   container_name: coordinator
-  #   restart: unless-stopped
-  #   volumes:
-  #     - druid_shared:/opt/shared
-  #     - coordinator_var:/opt/druid/var
-  #   ports:
-  #     - "8081:8081"
-  #   command:
-  #     - coordinator
-  #   depends_on:
-  #     - zookeeper
-  #     - postgres
-  #   env_file:
-  #     - ./app_druid/environment
+  # Druid Cordinator
+  coordinator:
+    image: duynguyenngoc/druid:v1.0.0
+    container_name: coordinator
+    restart: unless-stopped
+    volumes:
+      - druid_shared:/opt/shared
+      - coordinator_var:/opt/druid/var
+    ports:
+      - "8081:8081"
+    command:
+      - coordinator
+    depends_on:
+      - zookeeper
+      - postgres
+    env_file:
+      - ./app_druid/environment
 
-  # # Druid Broker
-  # broker:
-  #   image: duynguyenngoc/druid:v1.0.0
-  #   container_name: broker
-  #   restart: unless-stopped
-  #   volumes:
-  #     - broker_var:/opt/druid/var
-  #   ports:
-  #     - "8082:8082"
-  #   command:
-  #     - broker
-  #   depends_on: 
-  #     - zookeeper
-  #     - postgres
-  #     - coordinator
-  #   env_file:
-  #      - ./app_druid/environment
 
-  # # Druid Historical
-  # historical:
-  #   image: duynguyenngoc/druid:v1.0.0
-  #   container_name: historical
-  #   restart: unless-stopped
-  #   volumes:
-  #     - druid_shared:/opt/shared
-  #     - historical_var:/opt/druid/var
-  #   ports:
-  #     - "8083:8083"
-  #   command:
-  #     - historical
-  #   depends_on: 
-  #     - zookeeper
-  #     - postgres
-  #     - coordinator
-  #   env_file:
-  #     - ./app_druid/environment
+  # Druid Broker
+  broker:
+    image: duynguyenngoc/druid:v1.0.0
+    container_name: broker
+    restart: unless-stopped
+    volumes:
+      - broker_var:/opt/druid/var
+    ports:
+      - "8082:8082"
+    command:
+      - broker
+    depends_on: 
+      - zookeeper
+      - postgres
+      - coordinator
+    env_file:
+       - ./app_druid/environment
 
-  # # Druid middlemanager
-  # middlemanager:
-  #   image: duynguyenngoc/druid:v1.0.0
-  #   container_name: middlemanager
-  #   volumes:
-  #     - druid_shared:/opt/shared
-  #     - middle_var:/opt/druid/var
-  #   ports:
-  #     - "8091:8091"
-  #     - "8100-8105:8100-8105"
-  #   command:
-  #     - middleManager
-  #   depends_on: 
-  #     - zookeeper
-  #     - postgres
-  #     - coordinator
-  #   env_file:
-  #     - ./app_druid/environment
+
+  # Druid Historical
+  historical:
+    image: duynguyenngoc/druid:v1.0.0
+    container_name: historical
+    restart: unless-stopped
+    volumes:
+      - druid_shared:/opt/shared
+      - historical_var:/opt/druid/var
+    ports:
+      - "8083:8083"
+    command:
+      - historical
+    depends_on: 
+      - zookeeper
+      - postgres
+      - coordinator
+    env_file:
+      - ./app_druid/environment
+
+
+  # Druid middlemanager
+  middlemanager:
+    image: duynguyenngoc/druid:v1.0.0
+    container_name: middlemanager
+    volumes:
+      - druid_shared:/opt/shared
+      - middle_var:/opt/druid/var
+    ports:
+      - "8091:8091"
+      - "8100-8105:8100-8105"
+    command:
+      - middleManager
+    depends_on: 
+      - zookeeper
+      - postgres
+      - coordinator
+    env_file:
+      - ./app_druid/environment
   
-  # # Druid router
-  # router:
-  #   image: duynguyenngoc/druid:v1.0.0
-  #   container_name: router
-  #   restart: unless-stopped
-  #   volumes:
-  #     - router_var:/opt/druid/var
-  #   ports:
-  #     - "8888:8888"
-  #   command:
-  #     - router
-  #   depends_on: 
-  #     - zookeeper
-  #     - postgres
-  #     - coordinator
-  #   env_file:
-  #     - ./app_druid/environment
 
-  # # Superset Demo need change to superset latest on production
-  # superset:
-  #   image: amancevice/superset:1.4.1
-  #   container_name: superset
-  #   restart: unless-stopped
-  #   ports:
-  #     - 8088:8088
+  # Druid router
+  router:
+    image: duynguyenngoc/druid:v1.0.0
+    container_name: router
+    restart: unless-stopped
+    volumes:
+      - router_var:/opt/druid/var
+    ports:
+      - "8888:8888"
+    command:
+      - router
+    depends_on: 
+      - zookeeper
+      - postgres
+      - coordinator
+    env_file:
+      - ./app_druid/environment
+
+
+  # Superset Demo need change to superset latest on production
+  superset:
+    image: amancevice/superset:1.4.1
+    container_name: superset
+    restart: unless-stopped
+    ports:
+      - 8088:8088
     
+
   # Airflow sequency need change to celery on product
   airflow:
     image: duynguyenngoc/airflow:v1.0.0
@@ -166,6 +174,7 @@ services:
     ports:
       - 3000:8080
     command: airflow standalone   
+  
   
   # Redis for Airflow
   redis:
