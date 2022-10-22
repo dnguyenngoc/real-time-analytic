@@ -1004,3 +1004,27 @@ kafka.errors.NoBrokersAvailable: NoBrokersAvailable
 [2022-10-22 04:42:55,587] {logging_mixin.py:109} INFO - [2022-10-22 04:42:55,587] {dag.py:2398} INFO - Sync 1 DAGs
 [2022-10-22 04:42:55,605] {logging_mixin.py:109} INFO - [2022-10-22 04:42:55,605] {dag.py:2937} INFO - Setting next_dagrun for Demo to 2022-10-22T04:42:00+00:00
 [2022-10-22 04:42:55,615] {processor.py:171} INFO - Processing /airflow/dags/demo.py took 0.279 seconds
+[2022-10-22 04:43:25,715] {processor.py:163} INFO - Started process (PID=137) to work on /airflow/dags/demo.py
+[2022-10-22 04:43:25,717] {processor.py:642} INFO - Processing file /airflow/dags/demo.py for tasks to queue
+[2022-10-22 04:43:25,718] {logging_mixin.py:109} INFO - [2022-10-22 04:43:25,717] {dagbag.py:500} INFO - Filling up the DagBag from /airflow/dags/demo.py
+[2022-10-22 04:43:25,766] {logging_mixin.py:109} INFO - [2022-10-22 04:43:25,766] {conn.py:381} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.20.0.8', 9092)]>: connecting to kafka:9092 [('172.20.0.8', 9092) IPv4]
+[2022-10-22 04:43:25,767] {logging_mixin.py:109} INFO - [2022-10-22 04:43:25,767] {conn.py:1205} INFO - Probing node bootstrap-0 broker version
+[2022-10-22 04:43:25,768] {logging_mixin.py:109} INFO - [2022-10-22 04:43:25,768] {conn.py:410} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.20.0.8', 9092)]>: Connection complete.
+[2022-10-22 04:43:25,871] {logging_mixin.py:109} INFO - [2022-10-22 04:43:25,871] {conn.py:1267} INFO - Broker version identified as 2.5.0
+[2022-10-22 04:43:25,872] {logging_mixin.py:109} INFO - [2022-10-22 04:43:25,871] {conn.py:1269} INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+[2022-10-22 04:43:25,948] {processor.py:654} INFO - DAG(s) dict_keys(['Demo']) retrieved from /airflow/dags/demo.py
+[2022-10-22 04:43:25,956] {logging_mixin.py:109} INFO - [2022-10-22 04:43:25,956] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-10-22 04:43:25,974] {logging_mixin.py:109} INFO - [2022-10-22 04:43:25,974] {dag.py:2937} INFO - Setting next_dagrun for Demo to 2022-10-22T04:43:00+00:00
+[2022-10-22 04:43:25,984] {processor.py:171} INFO - Processing /airflow/dags/demo.py took 0.272 seconds
+[2022-10-22 04:43:56,093] {processor.py:163} INFO - Started process (PID=139) to work on /airflow/dags/demo.py
+[2022-10-22 04:43:56,095] {processor.py:642} INFO - Processing file /airflow/dags/demo.py for tasks to queue
+[2022-10-22 04:43:56,096] {logging_mixin.py:109} INFO - [2022-10-22 04:43:56,096] {dagbag.py:500} INFO - Filling up the DagBag from /airflow/dags/demo.py
+[2022-10-22 04:43:56,138] {logging_mixin.py:109} INFO - [2022-10-22 04:43:56,138] {conn.py:381} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.20.0.8', 9092)]>: connecting to kafka:9092 [('172.20.0.8', 9092) IPv4]
+[2022-10-22 04:43:56,139] {logging_mixin.py:109} INFO - [2022-10-22 04:43:56,139] {conn.py:1205} INFO - Probing node bootstrap-0 broker version
+[2022-10-22 04:43:56,141] {logging_mixin.py:109} INFO - [2022-10-22 04:43:56,140] {conn.py:410} INFO - <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.20.0.8', 9092)]>: Connection complete.
+[2022-10-22 04:43:56,244] {logging_mixin.py:109} INFO - [2022-10-22 04:43:56,244] {conn.py:1267} INFO - Broker version identified as 2.5.0
+[2022-10-22 04:43:56,245] {logging_mixin.py:109} INFO - [2022-10-22 04:43:56,244] {conn.py:1269} INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+[2022-10-22 04:43:56,329] {processor.py:654} INFO - DAG(s) dict_keys(['Demo']) retrieved from /airflow/dags/demo.py
+[2022-10-22 04:43:56,336] {logging_mixin.py:109} INFO - [2022-10-22 04:43:56,336] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-10-22 04:43:56,355] {logging_mixin.py:109} INFO - [2022-10-22 04:43:56,355] {dag.py:2937} INFO - Setting next_dagrun for Demo to 2022-10-22T04:43:00+00:00
+[2022-10-22 04:43:56,367] {processor.py:171} INFO - Processing /airflow/dags/demo.py took 0.277 seconds
