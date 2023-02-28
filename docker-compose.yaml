@@ -1,7 +1,7 @@
 version: '3.8'
 
 volumes:
-  metadata_data: {}
+  # metadata_data: {}
   middle_var: {}
   historical_var: {}
   broker_var: {}
@@ -17,11 +17,9 @@ services:
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
       ZOOKEEPER_TICK_TIME: 2000
-      ZOO_MY_ID: 1
     ports:
       - 22181:2181
 
-  # Kafka
   kafka:
     image: confluentinc/cp-kafka:latest
     depends_on:
@@ -45,8 +43,8 @@ services:
     container_name: postgres
     image: postgres:14.1-alpine
     restart: unless-stopped
-    volumes:
-      - metadata_data:/var/lib/postgresql/data
+    # volumes:
+    #   - metadata_data:/var/lib/postgresql/data
     ports:
       - 5432:5432
     environment:
@@ -71,8 +69,7 @@ services:
       - zookeeper
       - postgres
     env_file:
-      - ./app_druid/environment
-
+      - ./app_druid/environment.env
 
   # Druid Broker
   broker:
@@ -90,8 +87,7 @@ services:
       - postgres
       - coordinator
     env_file:
-       - ./app_druid/environment
-
+       - ./app_druid/environment.env
 
   # Druid Historical
   historical:
@@ -110,8 +106,7 @@ services:
       - postgres
       - coordinator
     env_file:
-      - ./app_druid/environment
-
+      - ./app_druid/environment.env
 
   # Druid middlemanager
   middlemanager:
@@ -130,9 +125,8 @@ services:
       - postgres
       - coordinator
     env_file:
-      - ./app_druid/environment
+      - ./app_druid/environment.env
   
-
   # Druid router
   router:
     image: duynguyenngoc/druid:v1.0.0
@@ -149,8 +143,7 @@ services:
       - postgres
       - coordinator
     env_file:
-      - ./app_druid/environment
-
+      - ./app_druid/environment.env
 
   # Superset Demo need change to superset latest on production
   superset:
@@ -160,10 +153,9 @@ services:
     ports:
       - 8088:8088
     
-
   # Airflow sequency need change to celery on product
   airflow:
-    image: duynguyenngoc/airflow:v1.0.0
+    image: duynguyenngoc/airflow:v2.2.5-py39
     container_name: airflow
     restart: unless-stopped
     volumes:
@@ -173,12 +165,10 @@ services:
       - AIRFLOW_UID=50000
     ports:
       - 3000:8080
-    command: airflow standalone   
-  
   
   # Redis for Airflow
   redis:
     image: redis
     restart: unless-stopped
     volumes:
-      - ./app_redis:/data
+      - ./a-redis:/data
