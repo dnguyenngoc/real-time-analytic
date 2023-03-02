@@ -158,6 +158,8 @@ services:
     image: duynguyenngoc/airflow:v2.2.5-py39
     container_name: airflow
     restart: unless-stopped
+    depends_on:
+      - kafka
     volumes:
       - ./app_airflow/app/:/airflow/
     environment:
