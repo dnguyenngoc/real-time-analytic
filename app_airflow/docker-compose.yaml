@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+
+  airflow:
+    build: 
+      context: ./
+      dockerfile: ./Dockerfile
+    container_name: airflow
+    restart: unless-stopped
+    volumes:
+      - ./app/:/airflow/
+    environment:
+      - AIRFLOW_HOME=/airflow
+      - AIRFLOW_UID=50000
+    ports:
+      - 3000:8080
+  
+  redis:
+    image: redis
+    restart: unless-stopped
+    volumes:
+      - ../app_redis:/data

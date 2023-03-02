@@ -10,3 +10,8 @@ app_redis/*
 
 airflow.db
 superset.db
+
+app_airflow/app/airflow-webserver.pid
+app_airflow/app/standalone_admin_password.txt
+a-redis
+
